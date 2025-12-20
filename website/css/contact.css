@@ -1,0 +1,231 @@
+
+/* Contact Page */
+.contact-card {
+  text-align: center;
+  padding: var(--space-xl);
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card__icon {
+  font-size: var(--fs-3xl);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-card__title {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-md);
+}
+
+.contact-card__description {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-card__details {
+  margin-top: var(--space-lg);
+}
+
+.contact-card__link {
+  display: block;
+  font-weight: 600;
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-xs);
+  text-decoration: none;
+}
+
+.contact-card__hours {
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.contact-card__address {
+  font-style: normal;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-card__note {
+  color: var(--text-muted);
+  font-size: var(--fs-xs);
+}
+
+.map-container {
+  margin-top: var(--space-2xl);
+}
+
+.map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-xl);
+}
+
+.contact-sidebar {
+  background-color: var(--color-light);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+}
+
+.sidebar-title {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: var(--space-xl);
+}
+
+.sidebar-list li {
+  margin-bottom: var(--space-sm);
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.sidebar-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.social-contact {
+  margin-top: var(--space-xl);
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.social-link {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Forms */
+.contact-form {
+  background-color: var(--bg-card);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: var(--space-lg);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: var(--space-md);
+  border: 1px solid var(--color-gray-light);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.1);
+}
+
+.form-input:invalid:not(:focus):not(:placeholder-shown),
+.form-textarea:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: var(--color-secondary);
+}
+
+.form-input:valid:not(:focus):not(:placeholder-shown),
+.form-textarea:valid:not(:focus):not(:placeholder-shown) {
+  border-color: var(--color-primary);
+}
+
+.form-hint {
+  display: block;
+  margin-top: var(--space-xs);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.form-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+}
+
+.form-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form-radio input[type="radio"] {
+  margin-right: var(--space-xs);
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.form-checkbox input[type="checkbox"] {
+  margin-right: var(--space-sm);
+  margin-top: 0.25rem;
+}
+
+.form-checkbox-label {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+.form-link {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.form-submit {
+  margin-top: var(--space-xl);
+}
+
+.form-note {
+  margin-top: var(--space-md);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  background-color: var(--color-light);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+}
