@@ -1,454 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>   
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
-    
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
     <title>Contact Us - Dream Travels</title>
-    
-    
-</head>
-<body>   
-    
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                
-                <div class="logo">
-                    <a href="index.html" class="logo__link">
-                        <h1 class="logo__text">Dream<span class="logo__highlight">Travels</span></h1>
-                    </a>
-                </div>
-                
-                
-                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
-                <label for="menu-toggle" class="menu-toggle-label" aria-expanded="false">
-                    <span class="hamburger"></span>
-                    <span class="sr-only">Menu</span>
-                </label>
-                
-                
-                <nav class="nav" id="main-nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="destinations.html" class="nav__link">Destinations</a></li>
-                        <li class="nav__item"><a href="packages.html" class="nav__link">Packages</a></li>
-                        <li class="nav__item"><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <h1 class="logo__text">
+                Dream<span class="logo__highlight">Travels</span>
+              </h1>
+            </a>
+          </div>
+
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Toggle navigation menu"
+          />
+          <label
+            for="menu-toggle"
+            class="menu-toggle-label"
+            aria-expanded="false"
+          >
+            <span class="hamburger"></span>
+            <span class="sr-only">Menu</span>
+          </label>
+
+          <nav class="nav" id="main-nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="destinations.html" class="nav__link">Destinations</a>
+              </li>
+              <li class="nav__item">
+                <a href="packages.html" class="nav__link">Packages</a>
+              </li>
+              <li class="nav__item">
+                <a href="contact.html" class="nav__link nav__link--active"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    
-    
+
     <main id="main-content">
-        
-        <section class="hero hero--contact">
-            <div class="hero__overlay">
-                <div class="container">
-                    <div class="hero__content">
-                        <h2 class="hero__title animate-fade-up">Plan Your Dream Trip</h2>
-                        <p class="hero__subtitle animate-fade-up animate-delay-1">Our travel experts are ready to help you create unforgettable memories</p>
-                        <div class="hero__buttons animate-fade-up animate-delay-2">
-                            <a href="#contact-form" class="btn btn--primary">Send a Message</a>
-                            <a href="tel:+11234567890" class="btn btn--secondary">Call Now</a>
-                        </div>
-                    </div>
-                </div>
+      <section class="hero hero--contact">
+        <div class="hero__overlay">
+          <div class="container">
+            <div class="hero__content">
+              <h2 class="hero__title animate-fade-up">Plan Your Dream Trip</h2>
+              <p class="hero__subtitle animate-fade-up animate-delay-1">
+                Our travel experts are ready to help you create unforgettable
+                memories
+              </p>
+              <div class="hero__buttons animate-fade-up animate-delay-2">
+                <a href="#contact-form" class="btn btn--primary"
+                  >Send a Message</a
+                >
+                <a href="tel:+11234567890" class="btn btn--secondary"
+                  >Call Now</a
+                >
+              </div>
             </div>
-        </section>
-        
-        
-        <section class="section section--contact-info">
-            <div class="container">
-                <h2 class="section__title">Get in Touch</h2>
-                <p class="section__subtitle">Choose your preferred way to connect with us</p>
-                
-                <div class="grid grid--3-col">
-                    <article class="contact-card">
-                        <div class="contact-card__icon">📞</div>
-                        <h3 class="contact-card__title">Call Us</h3>
-                        <p class="contact-card__description">Speak directly with one of our travel consultants</p>
-                        <div class="contact-card__details">
-                            <a href="tel:+11234567890" class="contact-card__link">(123) 456-7890</a>
-                            <p class="contact-card__hours">Mon-Fri: 9am-7pm EST</p>
-                            <p class="contact-card__hours">Sat: 10am-4pm EST</p>
-                        </div>
-                    </article>
-                    
-                    <article class="contact-card">
-                        <div class="contact-card__icon">✉️</div>
-                        <h3 class="contact-card__title">Email Us</h3>
-                        <p class="contact-card__description">Send us your questions and we'll respond within 24 hours</p>
-                        <div class="contact-card__details">
-                            <a href="mailto:info@dreamtravels.com" class="contact-card__link">info@dreamtravels.com</a>
-                            <p class="contact-card__hours">For general inquiries</p>
-                            <a href="mailto:support@dreamtravels.com" class="contact-card__link">support@dreamtravels.com</a>
-                            <p class="contact-card__hours">For existing bookings</p>
-                        </div>
-                    </article>
-                    
-                    <article class="contact-card">
-                        <div class="contact-card__icon">📍</div>
-                        <h3 class="contact-card__title">Visit Us</h3>
-                        <p class="contact-card__description">We're available for in-person consultations by appointment</p>
-                        <div class="contact-card__details">
-                            <address class="contact-card__address">
-                                123 Travel Street<br>
-                                Karachi, 75500<br>
-                                Pakistan
-                            </address>
-                            <p class="contact-card__hours">By appointment only</p>
-                            <p class="contact-card__note">(We also serve clients remotely worldwide)</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section section--contact-form-map">
-            <div class="container">
-                <div class="grid grid--2-col">
-                    
-                    <div class="contact-form-container" id="contact-form">
-                        <h2 class="section__title">Send Us a Message</h2>
-                        <p class="section__subtitle">Fill out the form below and we'll get back to you soon</p>
-                        
-                       
-                        <form action="mailto:info@dreamtravels.com" method="post" enctype="text/plain" class="contact-form">
-                            
-                            <input type="hidden" name="package" id="hidden-package">
-                            <input type="hidden" name="destination" id="hidden-destination">
-                            <input type="hidden" name="price" id="hidden-price">
-                            
-                            <div class="form-group">
-                                <label for="name" class="form-label">Full Name *</label>
-                                <input type="text" id="name" name="name" class="form-input" required 
-                                       placeholder="Enter your full name" 
-                                       pattern="[A-Za-z\s]{2,50}" 
-                                       title="Please enter a valid name (2-50 characters, letters and spaces only)">
-                                <span class="form-hint">Must be 2-50 characters</span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email" class="form-label">Email Address *</label>
-                                <input type="email" id="email" name="email" class="form-input" required 
-                                       placeholder="Enter your email address">
-                                <span class="form-hint">We'll never share your email</span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone" class="form-label">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" class="form-input" 
-                                       placeholder="Enter your phone number"
-                                       pattern="[\+\d\s\-\(\)]{10,20}"
-                                       title="Please enter a valid phone number">
-                                <span class="form-hint">Optional, but helpful for faster response</span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject" class="form-label">Subject *</label>
-                                <select id="subject" name="subject" class="form-select" required>
-                                    <option value="" disabled selected>Select an inquiry type</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="package">Package Information</option>
-                                    <option value="booking">Booking Assistance</option>
-                                    <option value="custom">Custom Trip Request</option>
-                                    <option value="support">Customer Support</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message" class="form-label">Message *</label>
-                                <textarea id="message" name="message" class="form-textarea" required 
-                                          placeholder="Tell us about your travel plans, questions, or concerns..."
-                                          rows="5" minlength="10" maxlength="1000"></textarea>
-                                <span class="form-hint">Minimum 10 characters, maximum 1000</span>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="preferred-contact" class="form-label">Preferred Contact Method</label>
-                                <div class="form-radio-group">
-                                    <label class="form-radio">
-                                        <input type="radio" name="contact-method" value="email" checked>
-                                        <span class="form-radio-label">Email</span>
-                                    </label>
-                                    <label class="form-radio">
-                                        <input type="radio" name="contact-method" value="phone">
-                                        <span class="form-radio-label">Phone</span>
-                                    </label>
-                                    <label class="form-radio">
-                                        <input type="radio" name="contact-method" value="either">
-                                        <span class="form-radio-label">Either</span>
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="form-checkbox">
-                                    <input type="checkbox" name="newsletter" checked>
-                                    <span class="form-checkbox-label">Subscribe to our newsletter for travel tips and exclusive offers</span>
-                                </label>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="form-checkbox">
-                                    <input type="checkbox" name="terms" required>
-                                    <span class="form-checkbox-label">I agree to the <a href="#" class="form-link">Terms of Service</a> and <a href="#" class="form-link">Privacy Policy</a> *</span>
-                                </label>
-                            </div>
-                            
-                            <div class="form-submit">
-                                <button type="submit" class="btn btn--primary btn--large">Send Message</button>
-                                <p class="form-note">
-                                    <strong>Note:</strong> This is a demo form. In production, replace the <code>action</code> attribute with your form processing endpoint. 
-                                    See README for instructions.
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-                    
-                    
-                    <div class="map-container">
-                        <h2 class="section__title">Find Us</h2>
-                        <p class="section__subtitle">Our location in Karachi, Pakistan</p>
-                        
-                        
-                        <div class="map">
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.664863567818!2d67.03088231500359!3d24.861296784044593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e70a8c8c48b%3A0x6c5c8b7b7b7b7b7b!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1678888888888!5m2!1sen!2s" 
-                                width="100%" 
-                                height="450" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy" 
-                                referrerpolicy="no-referrer-when-downgrade"
-                                title="Dream Travels location map - Karachi, Pakistan">
-                            </iframe>
-                        </div>
-                        
-                        <div class="contact-sidebar">
-                            <h3 class="sidebar-title">Quick Tips</h3>
-                            <ul class="sidebar-list">
-                                <li>Include your travel dates for faster planning</li>
-                                <li>Mention your budget range for better recommendations</li>
-                                <li>Tell us about your interests (culture, adventure, relaxation, etc.)</li>
-                                <li>Let us know the size of your travel group</li>
-                                <li>For urgent matters, call us directly</li>
-                            </ul>
-                            
-                            <div class="social-contact">
-                                <h3 class="sidebar-title">Connect Socially</h3>
-                                <div class="social-links">
-                                    <a href="#" class="social-link" aria-label="Facebook">📘 Facebook</a>
-                                    <a href="#" class="social-link" aria-label="Instagram">📷 Instagram</a>
-                                    <a href="#" class="social-link" aria-label="Twitter">🐦 Twitter</a>
-                                    <a href="#" class="social-link" aria-label="LinkedIn">💼 LinkedIn</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section section--faq" id="faq">
-            <div class="container">
-                <h2 class="section__title">Frequently Asked Questions</h2>
-                <p class="section__subtitle">Find quick answers to common questions</p>
-                
-                <div class="accordion">
-                    
-                    <div class="accordion__item">
-                        <input type="checkbox" id="faq1" class="accordion__input">
-                        <label for="faq1" class="accordion__label">
-                            <h3>How far in advance should I book my trip?</h3>
-                            <span class="accordion__icon"></span>
-                        </label>
-                        <div class="accordion__content">
-                            <p>We recommend booking at least 3-6 months in advance for international trips, especially during peak seasons (summer, holidays). For last-minute trips, we often have availability but options may be limited. For domestic or regional travel, 1-2 months in advance is usually sufficient.</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="accordion__item">
-                        <input type="checkbox" id="faq2" class="accordion__input">
-                        <label for="faq2" class="accordion__label">
-                            <h3>What is your cancellation policy?</h3>
-                            <span class="accordion__icon"></span>
-                        </label>
-                        <div class="accordion__content">
-                            <p>Cancellation policies vary by package and supplier. Generally, our Explorer package allows cancellations up to 30 days before departure for a full refund, Classic Escape requires 45 days, and Premium Voyage requires 60 days. We highly recommend purchasing travel insurance to cover unexpected cancellations.</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="accordion__item">
-                        <input type="checkbox" id="faq3" class="accordion__input">
-                        <label for="faq3" class="accordion__label">
-                            <h3>Do you offer payment plans?</h3>
-                            <span class="accordion__icon"></span>
-                        </label>
-                        <div class="accordion__content">
-                            <p>Yes, we offer flexible payment plans for most packages. Typically, we require a 30% deposit to secure your booking, with the balance due 60 days before departure. For Premium Voyage packages, we can arrange customized payment schedules. Contact us for specific payment plan options.</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="accordion__item">
-                        <input type="checkbox" id="faq4" class="accordion__input">
-                        <label for="faq4" class="accordion__label">
-                            <h3>Can you accommodate special dietary requirements?</h3>
-                            <span class="accordion__icon"></span>
-                        </label>
-                        <div class="accordion__content">
-                            <p>Absolutely. We work with hotels and restaurants to accommodate dietary restrictions including vegetarian, vegan, gluten-free, halal, kosher, and food allergies. Please inform us of any dietary requirements during the booking process so we can make the necessary arrangements.</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="accordion__item">
-                        <input type="checkbox" id="faq5" class="accordion__input">
-                        <label for="faq5" class="accordion__label">
-                            <h3>Do you arrange visas and travel documentation?</h3>
-                            <span class="accordion__icon"></span>
-                        </label>
-                        <div class="accordion__content">
-                            <p>We provide guidance on visa requirements and necessary documentation for all destinations. While we don't process visas directly, we can recommend reputable visa services and provide the required invitation letters or supporting documents from our partners. We ensure you have all the information needed for a smooth application process.</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="accordion__item">
-                        <input type="checkbox" id="faq6" class="accordion__input">
-                        <label for="faq6" class="accordion__label">
-                            <h3>What happens if there's an emergency during my trip?</h3>
-                            <span class="accordion__icon"></span>
-                        </label>
-                        <div class="accordion__content">
-                            <p>We provide 24/7 emergency support for all travelers. You'll receive a dedicated emergency contact number before departure. Our team can assist with medical emergencies, lost documents, flight changes, and other urgent situations. All our packages include travel insurance with emergency assistance coverage.</p>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="accordion__item">
-                        <input type="checkbox" id="faq7" class="accordion__input">
-                        <label for="faq7" class="accordion__label">
-                            <h3>Can I customize a package or create a completely bespoke itinerary?</h3>
-                            <span class="accordion__icon"></span>
-                        </label>
-                        <div class="accordion__content">
-                            <p>Yes! We specialize in customized travel experiences. You can modify any of our existing packages or work with our travel designers to create a completely bespoke itinerary tailored to your interests, budget, and travel style. Our Premium Voyage package is particularly flexible for customization.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="faq-footer">
-                    <p>Can't find your question? <a href="#contact-form" class="text-link">Contact us directly</a> and we'll be happy to help!</p>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section section--response">
-            <div class="container">
-                <div class="response-info">
-                    <div class="response-info__icon">⏱️</div>
-                    <div class="response-info__content">
-                        <h2 class="response-info__title">Our Response Time Commitment</h2>
-                        <p class="response-info__description">We pride ourselves on prompt communication. Here's what you can expect:</p>
-                        <div class="grid grid--3-col">
-                            <div class="response-time">
-                                <h3 class="response-time__title">Email Inquiries</h3>
-                                <p class="response-time__duration">Within 24 hours</p>
-                                <p class="response-time__note">Typically much faster during business hours</p>
-                            </div>
-                            <div class="response-time">
-                                <h3 class="response-time__title">Phone Calls</h3>
-                                <p class="response-time__duration">Immediate during business hours</p>
-                                <p class="response-time__note">Voicemails returned within 4 hours</p>
-                            </div>
-                            <div class="response-time">
-                                <h3 class="response-time__title">Custom Quote Requests</h3>
-                                <p class="response-time__duration">Within 48 hours</p>
-                                <p class="response-time__note">Complex itineraries may take slightly longer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section section--cta">
-            <div class="container">
-                <div class="cta">
-                    <div class="cta__content">
-                        <h2 class="cta__title">Ready to Start Your Journey?</h2>
-                        <p class="cta__description">Contact us today and let's begin planning the adventure of a lifetime.</p>
-                        <div class="cta__buttons">
-                            <a href="#contact-form" class="btn btn--primary btn--large">Send a Message</a>
-                            <a href="tel:+11234567890" class="btn btn--secondary btn--large">Call Now: (123) 456-7890</a>
-                            <a href="mailto:info@dreamtravels.com" class="btn btn--outline btn--large">Email Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    
-    <footer class="footer">
-        <div class="container">
-            <div class="grid grid--4-col">
-                <div class="footer__section">
-                    <h3 class="footer__title">Dream Travels</h3>
-                    <p class="footer__description">Creating unforgettable travel experiences since 2010. Based in Karachi, serving travelers worldwide.</p>
-                    <div class="footer__contact">
-                        <p>📍 Karachi (Remote)</p>
-                        <p>📧 info@dreamtravels.com</p>
-                        <p>📞 (123) 456-7890</p>
-                    </div>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Quick Links</h3>
-                    <ul class="footer__links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="packages.html">Packages</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Legal</h3>
-                    <ul class="footer__links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Booking Conditions</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Connect With Us</h3>
-                    <ul class="footer__links">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2025 Dream Travels. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section section--contact-info">
+        <div class="container">
+          <h2 class="section__title">Get in Touch</h2>
+          <p class="section__subtitle">
+            Choose your preferred way to connect with us
+          </p>
+
+          <div class="grid grid--3-col">
+            <article class="contact-card">
+              <div class="contact-card__icon">📞</div>
+              <h3 class="contact-card__title">Call Us</h3>
+              <p class="contact-card__description">
+                Speak directly with one of our travel consultants
+              </p>
+              <div class="contact-card__details">
+                <a href="tel:+11234567890" class="contact-card__link"
+                  >(123) 456-7890</a
+                >
+                <p class="contact-card__hours">Mon-Fri: 9am-7pm EST</p>
+                <p class="contact-card__hours">Sat: 10am-4pm EST</p>
+              </div>
+            </article>
+
+            <article class="contact-card">
+              <div class="contact-card__icon">✉️</div>
+              <h3 class="contact-card__title">Email Us</h3>
+              <p class="contact-card__description">
+                Send us your questions and we'll respond within 24 hours
+              </p>
+              <div class="contact-card__details">
+                <a
+                  href="mailto:info@dreamtravels.com"
+                  class="contact-card__link"
+                  >info@dreamtravels.com</a
+                >
+                <p class="contact-card__hours">For general inquiries</p>
+                <a
+                  href="mailto:support@dreamtravels.com"
+                  class="contact-card__link"
+                  >support@dreamtravels.com</a
+                >
+                <p class="contact-card__hours">For existing bookings</p>
+              </div>
+            </article>
+
+            <article class="contact-card">
+              <div class="contact-card__icon">📍</div>
+              <h3 class="contact-card__title">Visit Us</h3>
+              <p class="contact-card__description">
+                We're available for in-person consultations by appointment
+              </p>
+              <div class="contact-card__details">
+                <address class="contact-card__address">
+                  123 Travel Street<br />
+                  Lahore, 75500<br />
+                  Pakistan
+                </address>
+                <p class="contact-card__hours">By appointment only</p>
+                <p class="contact-card__note">
+                  (We also serve clients remotely worldwide)
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contact-form-map">
+        <div class="container">
+          <div class="grid grid--2-col">
+            <div class="contact-form-container" id="contact-form">
+              <h2 class="section__title">Send Us a Message</h2>
+              <p class="section__subtitle">
+                Fill out the form below and we'll get back to you soon
+              </p>
+
+              <form
+                action="mailto:info@dreamtravels.com"
+                method="post"
+                enctype="text/plain"
+                class="contact-form"
+              >
+                <input type="hidden" name="package" id="hidden-package" />
+                <input
+                  type="hidden"
+                  name="destination"
+                  id="hidden-destination"
+                />
+                <input type="hidden" name="price" id="hidden-price" />
+
+                <div class="form-group">
+                  <label for="name" class="form-label">Full Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    required
+                    placeholder="Enter your full name"
+                    pattern="[A-Za-z\s]{2,50}"
+                    title="Please enter a valid name (2-50 characters, letters and spaces only)"
+                  />
+                  <span class="form-hint">Must be 2-50 characters</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                    placeholder="Enter your email address"
+                  />
+                  <span class="form-hint">We'll never share your email</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="Enter your phone number"
+                    pattern="[\+\d\s\-\(\)]{10,20}"
+                    title="Please enter a valid phone number"
+                  />
+                  <span class="form-hint"
+                    >Optional, but helpful for faster response</span
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject *</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select an inquiry type
+                    </option>
+                    <option value="general">General Inquiry</option>
+                    <option value="package">Package Information</option>
+                    <option value="booking">Booking Assistance</option>
+                    <option value="custom">Custom Trip Request</option>
+                    <option value="support">Customer Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    required
+                    placeholder="Tell us about your travel plans, questions, or concerns..."
+                    rows="5"
+                    minlength="10"
+                    maxlength="1000"
+                  ></textarea>
+                  <span class="form-hint"
+                    >Minimum 10 characters, maximum 1000</span
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="preferred-contact" class="form-label"
+                    >Preferred Contact Method</label
+                  >
+                  <div class="form-radio-group">
+                    <label class="form-radio">
+                      <input
+                        type="radio"
+                        name="contact-method"
+                        value="email"
+                        checked
+                      />
+                      <span class="form-radio-label">Email</span>
+                    </label>
+                    <label class="form-radio">
+                      <input type="radio" name="contact-method" value="phone" />
+                      <span class="form-radio-label">Phone</span>
+                    </label>
+                    <label class="form-radio">
+                      <input
+                        type="radio"
+                        name="contact-method"
+                        value="either"
+                      />
+                      <span class="form-radio-label">Either</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="newsletter" checked />
+                    <span class="form-checkbox-label"
+                      >Subscribe to our newsletter for travel tips and exclusive
+                      offers</span
+                    >
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="terms" required />
+                    <span class="form-checkbox-label"
+                      >I agree to the
+                      <a href="#" class="form-link">Terms of Service</a> and
+                      <a href="#" class="form-link">Privacy Policy</a> *</span
+                    >
+                  </label>
+                </div>
+
+                <div class="form-submit">
+                  <button type="submit" class="btn btn--primary btn--large">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="map-container">
+              <h2 class="section__title">Find Us</h2>
+              <p class="section__subtitle">Our location in Lahore, Pakistan</p>
+
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3399.0177817113463!2d74.35483677636871!3d31.57856024426347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b279f00af0b%3A0x927b40170bb6804c!2sDepartment%20of%20Computer%20Science-UET%20Lahore!5e0!3m2!1sen!2s!4v1766250164867!5m2!1sen!2s"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div class="contact-sidebar">
+                <h3 class="sidebar-title">Quick Tips</h3>
+                <ul class="sidebar-list">
+                  <li>Include your travel dates for faster planning</li>
+                  <li>Mention your budget range for better recommendations</li>
+                  <li>
+                    Tell us about your interests (culture, adventure,
+                    relaxation, etc.)
+                  </li>
+                  <li>Let us know the size of your travel group</li>
+                  <li>For urgent matters, call us directly</li>
+                </ul>
+
+                <div class="social-contact">
+                  <h3 class="sidebar-title">Connect Socially</h3>
+                  <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"
+                      >📘 Facebook</a
+                    >
+                    <a href="#" class="social-link" aria-label="Instagram"
+                      >📷 Instagram</a
+                    >
+                    <a href="#" class="social-link" aria-label="Twitter"
+                      >🐦 Twitter</a
+                    >
+                    <a href="#" class="social-link" aria-label="LinkedIn"
+                      >💼 LinkedIn</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--faq" id="faq">
+        <div class="container">
+          <h2 class="section__title">Frequently Asked Questions</h2>
+          <p class="section__subtitle">
+            Find quick answers to common questions
+          </p>
+
+          <div class="accordion">
+            <div class="accordion__item">
+              <input type="checkbox" id="faq1" class="accordion__input" />
+              <label for="faq1" class="accordion__label">
+                <h3>How far in advance should I book my trip?</h3>
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <p>
+                  We recommend booking at least 3-6 months in advance for
+                  international trips, especially during peak seasons (summer,
+                  holidays). For last-minute trips, we often have availability
+                  but options may be limited. For domestic or regional travel,
+                  1-2 months in advance is usually sufficient.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <input type="checkbox" id="faq2" class="accordion__input" />
+              <label for="faq2" class="accordion__label">
+                <h3>What is your cancellation policy?</h3>
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <p>
+                  Cancellation policies vary by package and supplier. Generally,
+                  our Explorer package allows cancellations up to 30 days before
+                  departure for a full refund, Classic Escape requires 45 days,
+                  and Premium Voyage requires 60 days. We highly recommend
+                  purchasing travel insurance to cover unexpected cancellations.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <input type="checkbox" id="faq3" class="accordion__input" />
+              <label for="faq3" class="accordion__label">
+                <h3>Do you offer payment plans?</h3>
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <p>
+                  Yes, we offer flexible payment plans for most packages.
+                  Typically, we require a 30% deposit to secure your booking,
+                  with the balance due 60 days before departure. For Premium
+                  Voyage packages, we can arrange customized payment schedules.
+                  Contact us for specific payment plan options.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <input type="checkbox" id="faq4" class="accordion__input" />
+              <label for="faq4" class="accordion__label">
+                <h3>Can you accommodate special dietary requirements?</h3>
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <p>
+                  Absolutely. We work with hotels and restaurants to accommodate
+                  dietary restrictions including vegetarian, vegan, gluten-free,
+                  halal, kosher, and food allergies. Please inform us of any
+                  dietary requirements during the booking process so we can make
+                  the necessary arrangements.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <input type="checkbox" id="faq5" class="accordion__input" />
+              <label for="faq5" class="accordion__label">
+                <h3>Do you arrange visas and travel documentation?</h3>
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <p>
+                  We provide guidance on visa requirements and necessary
+                  documentation for all destinations. While we don't process
+                  visas directly, we can recommend reputable visa services and
+                  provide the required invitation letters or supporting
+                  documents from our partners. We ensure you have all the
+                  information needed for a smooth application process.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <input type="checkbox" id="faq6" class="accordion__input" />
+              <label for="faq6" class="accordion__label">
+                <h3>What happens if there's an emergency during my trip?</h3>
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <p>
+                  We provide 24/7 emergency support for all travelers. You'll
+                  receive a dedicated emergency contact number before departure.
+                  Our team can assist with medical emergencies, lost documents,
+                  flight changes, and other urgent situations. All our packages
+                  include travel insurance with emergency assistance coverage.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <input type="checkbox" id="faq7" class="accordion__input" />
+              <label for="faq7" class="accordion__label">
+                <h3>
+                  Can I customize a package or create a completely bespoke
+                  itinerary?
+                </h3>
+                <span class="accordion__icon"></span>
+              </label>
+              <div class="accordion__content">
+                <p>
+                  Yes! We specialize in customized travel experiences. You can
+                  modify any of our existing packages or work with our travel
+                  designers to create a completely bespoke itinerary tailored to
+                  your interests, budget, and travel style. Our Premium Voyage
+                  package is particularly flexible for customization.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-footer">
+            <p>
+              Can't find your question?
+              <a href="#contact-form" class="text-link">Contact us directly</a>
+              and we'll be happy to help!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--response">
+        <div class="container">
+          <div class="response-info">
+            <div class="response-info__icon">⏱️</div>
+            <div class="response-info__content">
+              <h2 class="response-info__title">Our Response Time Commitment</h2>
+              <p class="response-info__description">
+                We pride ourselves on prompt communication. Here's what you can
+                expect:
+              </p>
+              <div class="grid grid--3-col">
+                <div class="response-time">
+                  <h3 class="response-time__title">Email Inquiries</h3>
+                  <p class="response-time__duration">Within 24 hours</p>
+                  <p class="response-time__note">
+                    Typically much faster during business hours
+                  </p>
+                </div>
+                <div class="response-time">
+                  <h3 class="response-time__title">Phone Calls</h3>
+                  <p class="response-time__duration">
+                    Immediate during business hours
+                  </p>
+                  <p class="response-time__note">
+                    Voicemails returned within 4 hours
+                  </p>
+                </div>
+                <div class="response-time">
+                  <h3 class="response-time__title">Custom Quote Requests</h3>
+                  <p class="response-time__duration">Within 48 hours</p>
+                  <p class="response-time__note">
+                    Complex itineraries may take slightly longer
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta__content">
+              <h2 class="cta__title">Ready to Start Your Journey?</h2>
+              <p class="cta__description">
+                Contact us today and let's begin planning the adventure of a
+                lifetime.
+              </p>
+              <div class="cta__buttons">
+                <a href="#contact-form" class="btn btn--primary btn--large"
+                  >Send a Message</a
+                >
+                <a href="tel:+11234567890" class="btn btn--secondary btn--large"
+                  >Call Now: (123) 456-7890</a
+                >
+                <a
+                  href="mailto:info@dreamtravels.com"
+                  class="btn btn--outline btn--large"
+                  >Email Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid--4-col">
+          <div class="footer__section">
+            <h3 class="footer__title">Dream Travels</h3>
+            <p class="footer__description">
+              Creating unforgettable travel experiences since 2010. Based in
+              Lahore, serving travelers worldwide.
+            </p>
+            <div class="footer__contact">
+              <p>📍 Lahore (Remote)</p>
+              <p>📧 info@dreamtravels.com</p>
+              <p>📞 (123) 456-7890</p>
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Legal</h3>
+            <ul class="footer__links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Booking Conditions</a></li>
+              <li><a href="#">Accessibility</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Connect With Us</h3>
+            <ul class="footer__links">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2025 Dream Travels. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
