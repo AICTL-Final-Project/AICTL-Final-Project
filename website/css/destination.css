@@ -1,12 +1,12 @@
 /* Destinations Page */
 .filter-container {
-  margin-bottom: var(--space-2xl);
+  margin-bottom: 3rem;
 }
 
 .filter-options {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-sm);
+  gap: 0.5rem;
   justify-content: center;
 }
 
@@ -16,41 +16,61 @@
 
 .filter-label {
   display: inline-block;
-  padding: var(--space-sm) var(--space-lg);
-  background-color: var(--color-light);
-  border-radius: var(--radius-md);
+  padding: 0.5rem 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 0.3s ease;
 }
 
 .filter-input:checked + .filter-label {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #2a9d8f;
+  color: #ffffff;
 }
 
 .filter-label:hover {
-  background-color: var(--color-gray-light);
+  background-color: #e9ecef;
 }
 
 .filter-input:checked + .filter-label:hover {
-  background-color: var(--color-primary-dark);
+  background-color: #21867a;
 }
 
-/* CSS-only Filtering for Destinations */
-/* This is a simplified filter that shows/hides based on CSS only */
-/* In a real implementation with JS, this would be more dynamic */
-#filter-europe:checked ~ .destinations-grid .destination-card:not([data-region*="europe"]) {
+.destination-card {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+body:has(.filter-input:checked) .destination-card {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* 1. When Pakistan is checked, hide everything NOT tagged with pakistan */
+body:has(#filter-pakistan:checked) .destination-card:not([data-region*="pakistan"]) {
   display: none;
 }
 
-#filter-asia:checked ~ .destinations-grid .destination-card:not([data-region*="asia"]) {
+
+/* 1. When EUROPE is checked, hide everything NOT tagged with europe */
+body:has(#filter-europe:checked) .destination-card:not([data-region*="europe"]) {
   display: none;
 }
 
-#filter-beach:checked ~ .destinations-grid .destination-card:not([data-category*="beach"]) {
+/* 2. When ASIA is checked, hide everything NOT tagged with asia */
+body:has(#filter-asia:checked) .destination-card:not([data-region*="asia"]) {
   display: none;
 }
 
-#filter-adventure:checked ~ .destinations-grid .destination-card:not([data-category*="adventure"]) {
+/* 3. When BEACH is checked, hide everything NOT tagged with beach */
+body:has(#filter-beach:checked) .destination-card:not([data-category*="beach"]) {
   display: none;
+}
+
+/* 4. When ADVENTURE is checked, hide everything NOT tagged with adventure */
+body:has(#filter-adventure:checked) .destination-card:not([data-category*="adventure"]) {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }

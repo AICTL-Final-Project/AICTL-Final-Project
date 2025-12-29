@@ -518,12 +518,12 @@ textarea {
 }
 
 .btn--primary {
-  background-color: #2a9d8f;
+  background-color: #e76f51;
   color: #ffffff;
 }
 
 .btn--primary:hover {
-  background-color: #21867a;
+  background-color: #d65c3e;
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -630,8 +630,7 @@ textarea {
   background-color: #ffffff;
   border-radius: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 250ms ease,
-    box-shadow 250ms ease;
+  transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
 .value-card:hover {
@@ -658,8 +657,7 @@ textarea {
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 250ms ease,
-    box-shadow 250ms ease;
+  transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
 .card:hover {
@@ -737,9 +735,8 @@ textarea {
   font-size: 0.875rem;
 }
 
-
 @media (max-width: 768px) {
-  .card{
+  .card {
     width: 100%;
   }
 }
@@ -749,8 +746,7 @@ textarea {
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 250ms ease,
-    box-shadow 250ms ease;
+  transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
 .destination-card:hover {
@@ -875,8 +871,7 @@ textarea {
   border-radius: 0.75rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 250ms ease,
-    box-shadow 250ms ease;
+  transition: transform 250ms ease, box-shadow 250ms ease;
   position: relative;
 }
 
@@ -1161,8 +1156,7 @@ textarea {
   z-index: 30;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 250ms ease,
-    visibility 250ms ease;
+  transition: opacity 250ms ease, visibility 250ms ease;
 }
 
 .modal:target {
