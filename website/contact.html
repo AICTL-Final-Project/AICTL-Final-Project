@@ -4,6 +4,7 @@
   <head>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    l<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Contact Us - Dream Travels</title>
   </head>
@@ -30,6 +31,8 @@
             class="menu-toggle-label"
             aria-expanded="false"
           >
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
             <span class="hamburger"></span>
             <span class="sr-only">Menu</span>
           </label>
@@ -88,7 +91,7 @@
 
           <div class="grid grid--3-col">
             <article class="contact-card">
-              <div class="contact-card__icon">📞</div>
+              <i class="fa-solid fa-phone"></i>
               <h3 class="contact-card__title">Call Us</h3>
               <p class="contact-card__description">
                 Speak directly with one of our travel consultants
@@ -103,7 +106,7 @@
             </article>
 
             <article class="contact-card">
-              <div class="contact-card__icon">✉️</div>
+              <i class="fa-solid fa-message"></i>
               <h3 class="contact-card__title">Email Us</h3>
               <p class="contact-card__description">
                 Send us your questions and we'll respond within 24 hours
@@ -125,7 +128,7 @@
             </article>
 
             <article class="contact-card">
-              <div class="contact-card__icon">📍</div>
+              <i class="fa-solid fa-location-dot"></i>
               <h3 class="contact-card__title">Visit Us</h3>
               <p class="contact-card__description">
                 We're available for in-person consultations by appointment
@@ -193,7 +196,6 @@
                     required
                     placeholder="Enter your email address"
                   />
-                  <span class="form-hint">We'll never share your email</span>
                 </div>
 
                 <div class="form-group">
@@ -226,7 +228,7 @@
                   <label class="form-checkbox">
                     <input type="checkbox" name="terms" required />
                     <span class="form-checkbox-label"
-                      >I agree to the
+                      > I agree to the
                       <a href="#" class="form-link">Terms of Service</a> and
                       <a href="#" class="form-link">Privacy Policy</a> *</span
                     >
@@ -255,8 +257,7 @@
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
-              </div>
-
+                
               <div class="contact-sidebar">
                 <h3 class="sidebar-title">Quick Tips</h3>
                 <ul class="sidebar-list">
@@ -269,24 +270,22 @@
                   <li>Let us know the size of your travel group</li>
                   <li>For urgent matters, call us directly</li>
                 </ul>
+              </div>
 
                 <div class="social-contact">
-                  <h3 class="sidebar-title">Connect Socially</h3>
+                  <h4>Connect Socially</h4>
                   <div class="social-links">
                     <!-- /add facebook icon -->
-                    <a href="#" class="social-link" aria-label="Facebook"
-                      >📘 Facebook</a>
-                    <a href="#" class="social-link" aria-label="Instagram"
-                      >📷 Instagram</a
-                    >
-                    <a href="#" class="social-link" aria-label="Twitter"
-                      >🐦 Twitter</a
-                    >
-                    <a href="#" class="social-link" aria-label="LinkedIn"
-                      >💼 LinkedIn</a
-                    >
-                  </div>
-                </div>
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-facebook"></i> Facebook</a>
+                   
+                    <!-- /add instagram icon -->
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <!-- /add twitter icon -->
+                    <a href="#" class="social-link"
+                      ><i class="fa-brands fa-x-twitter"></i> Twitter</a>
               </div>
             </div>
           </div>
