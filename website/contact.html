@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,8 +30,6 @@
             class="menu-toggle-label"
             aria-expanded="false"
           >
-            <span class="hamburger"></span>
-            <span class="hamburger"></span>
             <span class="hamburger"></span>
             <span class="sr-only">Menu</span>
           </label>
@@ -182,7 +181,6 @@
                     pattern="[A-Za-z\s]{2,50}"
                     title="Please enter a valid name (2-50 characters, letters and spaces only)"
                   />
-                  <span class="form-hint">Must be 2-50 characters</span>
                 </div>
 
                 <div class="form-group">
@@ -209,29 +207,6 @@
                     pattern="[\+\d\s\-\(\)]{10,20}"
                     title="Please enter a valid phone number"
                   />
-                  <span class="form-hint"
-                    >Optional, but helpful for faster response</span
-                  >
-                </div>
-
-                <div class="form-group">
-                  <label for="subject" class="form-label">Subject *</label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    class="form-select"
-                    required
-                  >
-                    <option value="" disabled selected>
-                      Select an inquiry type
-                    </option>
-                    <option value="general">General Inquiry</option>
-                    <option value="package">Package Information</option>
-                    <option value="booking">Booking Assistance</option>
-                    <option value="custom">Custom Trip Request</option>
-                    <option value="support">Customer Support</option>
-                    <option value="other">Other</option>
-                  </select>
                 </div>
 
                 <div class="form-group">
@@ -246,50 +221,7 @@
                     minlength="10"
                     maxlength="1000"
                   ></textarea>
-                  <span class="form-hint"
-                    >Minimum 10 characters, maximum 1000</span
-                  >
                 </div>
-
-                <div class="form-group">
-                  <label for="preferred-contact" class="form-label"
-                    >Preferred Contact Method</label
-                  >
-                  <div class="form-radio-group">
-                    <label class="form-radio">
-                      <input
-                        type="radio"
-                        name="contact-method"
-                        value="email"
-                        checked
-                      />
-                      <span class="form-radio-label">Email</span>
-                    </label>
-                    <label class="form-radio">
-                      <input type="radio" name="contact-method" value="phone" />
-                      <span class="form-radio-label">Phone</span>
-                    </label>
-                    <label class="form-radio">
-                      <input
-                        type="radio"
-                        name="contact-method"
-                        value="either"
-                      />
-                      <span class="form-radio-label">Either</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-checkbox">
-                    <input type="checkbox" name="newsletter" checked />
-                    <span class="form-checkbox-label"
-                      >Subscribe to our newsletter for travel tips and exclusive
-                      offers</span
-                    >
-                  </label>
-                </div>
-
                 <div class="form-group">
                   <label class="form-checkbox">
                     <input type="checkbox" name="terms" required />
@@ -341,9 +273,9 @@
                 <div class="social-contact">
                   <h3 class="sidebar-title">Connect Socially</h3>
                   <div class="social-links">
+                    <!-- /add facebook icon -->
                     <a href="#" class="social-link" aria-label="Facebook"
-                      >📘 Facebook</a
-                    >
+                      >📘 Facebook</a>
                     <a href="#" class="social-link" aria-label="Instagram"
                       >📷 Instagram</a
                     >
@@ -373,14 +305,11 @@
               <input type="checkbox" id="faq1" class="accordion__input" />
               <label for="faq1" class="accordion__label">
                 <h3>How far in advance should I book my trip?</h3>
-                <span class="accordion__icon"></span>
               </label>
               <div class="accordion__content">
                 <p>
                   We recommend booking at least 3-6 months in advance for
-                  international trips, especially during peak seasons (summer,
-                  holidays). For last-minute trips, we often have availability
-                  but options may be limited. For domestic or regional travel,
+                  international trips. For domestic or regional travel,
                   1-2 months in advance is usually sufficient.
                 </p>
               </div>
@@ -390,7 +319,6 @@
               <input type="checkbox" id="faq2" class="accordion__input" />
               <label for="faq2" class="accordion__label">
                 <h3>What is your cancellation policy?</h3>
-                <span class="accordion__icon"></span>
               </label>
               <div class="accordion__content">
                 <p>
@@ -407,7 +335,6 @@
               <input type="checkbox" id="faq3" class="accordion__input" />
               <label for="faq3" class="accordion__label">
                 <h3>Do you offer payment plans?</h3>
-                <span class="accordion__icon"></span>
               </label>
               <div class="accordion__content">
                 <p>
@@ -424,7 +351,6 @@
               <input type="checkbox" id="faq4" class="accordion__input" />
               <label for="faq4" class="accordion__label">
                 <h3>Can you accommodate special dietary requirements?</h3>
-                <span class="accordion__icon"></span>
               </label>
               <div class="accordion__content">
                 <p>
@@ -441,7 +367,6 @@
               <input type="checkbox" id="faq5" class="accordion__input" />
               <label for="faq5" class="accordion__label">
                 <h3>Do you arrange visas and travel documentation?</h3>
-                <span class="accordion__icon"></span>
               </label>
               <div class="accordion__content">
                 <p>
@@ -459,7 +384,6 @@
               <input type="checkbox" id="faq6" class="accordion__input" />
               <label for="faq6" class="accordion__label">
                 <h3>What happens if there's an emergency during my trip?</h3>
-                <span class="accordion__icon"></span>
               </label>
               <div class="accordion__content">
                 <p>
@@ -479,7 +403,6 @@
                   Can I customize a package or create a completely bespoke
                   itinerary?
                 </h3>
-                <span class="accordion__icon"></span>
               </label>
               <div class="accordion__content">
                 <p>
@@ -506,7 +429,6 @@
       <section class="section section--response">
         <div class="container">
           <div class="response-info">
-            <div class="response-info__icon">⏱️</div>
             <div class="response-info__content">
               <h2 class="response-info__title">Our Response Time Commitment</h2>
               <p class="response-info__description">
