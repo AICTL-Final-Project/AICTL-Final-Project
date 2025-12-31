@@ -1,10 +1,12 @@
+
 /* Packages Page */
 .package-toggle {
   display: flex;
+  margin-top: 50px;
   flex-wrap: wrap;
-  gap: 0.5rem;
+gap: 10px;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 50px;
 }
 
 .toggle-input {
@@ -13,30 +15,30 @@
 
 .toggle-label {
   display: inline-block;
-  padding: 0.5rem 1.5rem;
-  background-color: #f8f9fa;
-  border-radius: 0.5rem;
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--color-light);
+  border-radius: var(--radius-md);
   cursor: pointer;
-  transition: all 150ms ease;
+  transition: all var(--transition-fast);
 }
 
 .toggle-input:checked + .toggle-label {
-  background-color: #2a9d8f;
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .toggle-label:hover {
-  background-color: #e9ecef;
+  background-color: var(--color-gray-light);
 }
 
 .toggle-input:checked + .toggle-label:hover {
-  background-color: #21867a;
+  background-color: var(--color-primary-dark);
 }
 
 /* Package comparison table */
 .comparison-table-container {
   overflow-x: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-lg);
 }
 
 .comparison-table {
@@ -47,19 +49,19 @@
 
 .comparison-table th,
 .comparison-table td {
-  padding: 1rem;
+  padding: var(--space-md);
   text-align: center;
-  border: 1px solid #e9ecef;
+  border: 1px solid var(--color-gray-light);
 }
 
 .comparison-table thead th {
-  background-color: #f8f9fa;
+  background-color: var(--color-light);
   font-weight: 600;
 }
 
 .comparison-table tbody th {
-  background-color: #f8f9fa;
-  text-align: left;
+  background-color: var(--color-light);
+  text-align: center;
   font-weight: 600;
 }
 
@@ -68,7 +70,7 @@
 }
 
 .table-note {
-  font-size: 0.875rem;
-  color: #adb5bd;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
   font-style: italic;
 }
