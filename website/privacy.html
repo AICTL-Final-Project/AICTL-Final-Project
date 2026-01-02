@@ -3,13 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/privacy.css">
-    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="privacy.css">
+    <title>Privacy Policy - Dream Travels</title>
 </head>
 <body>
-    <header>
+    <header class="header">
     <h1>Privacy Policy</h1>
     <p class="last-updated">Last Updated: December 31,2025</p>
+     <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                
+                <div class="logo">
+                    <a href="index.html" class="logo__link">
+                        <h1 class="logo__text">Dream<span class="logo__highlight">Travels</span></h1>
+                    </a>
+                </div>
+                
+                
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <label for="menu-toggle" class="menu-toggle-label" aria-expanded="false">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="sr-only">Menu</span>
+                </label>
+                
+                
+                <nav class="nav" id="main-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="destinations.html" class="nav__link nav__link--active">Destinations</a></li>
+                        <li class="nav__item"><a href="packages.html" class="nav__link">Packages</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    
 </header>
 <div class="container">
     <nav class="sidebar">
@@ -58,6 +91,52 @@
         </section>
     </main>
 </div>
+  <footer class="footer">
+        <div class="container">
+            <div class="grid grid--4-col">
+                <div class="footer__section">
+                    <h3 class="footer__title">Dream Travels</h3>
+                    <p class="footer__description">Creating unforgettable travel experiences since 2010. Based in Lahore, serving travelers worldwide.</p>
+                    <div class="footer__contact">
+                        <p><i class="fa-solid fa-location-pin"></i> Lahore (Remote)</p>
+                        <p><i class="fa-solid fa-message"></i> info@dreamtravels.com</p>
+                        <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+                    </div>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Legal</h3>
+                    <ul class="footer__links">
+                        <li><a href="./privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h3 class="footer__title">Connect With Us</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.x.com" target="_blank">X</a></li>
+                        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 Dream Travels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
