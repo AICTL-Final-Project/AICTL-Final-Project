@@ -535,12 +535,12 @@ textarea {
 }
 
 .btn--primary {
-  background-color: #e76f51;
+  background-color: #76c7bc;
   color: #ffffff;
 }
 
 .btn--primary:hover {
-  background-color: #d65c3e;
+  background-color: #21867a;
   color: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
