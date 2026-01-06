@@ -1,339 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <link rel="stylesheet" href="css/style.css">
-    l<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    l
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Dream Travels - Experience the World</title>
-    
-</head>
-<body>
-    
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="logo">
-                    <a href="index.html" class="logo__link">
-                        <h1 class="logo__text">Dream<span class="logo__highlight">Travels</span></h1>
-                    </a>
-                </div>
-                
-                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
-                <label for="menu-toggle" class="menu-toggle-label" aria-expanded="false">
-                    <span class="hamburger"></span>
-                    <span class="sr-only">Menu</span>
-                </label>
-                
-                <nav class="nav" id="main-nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Home</a></li>
-                        <li class="nav__item"><a href="destinations.html" class="nav__link">Destinations</a></li>
-                        <li class="nav__item"><a href="packages.html" class="nav__link">Packages</a></li>
-                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <h1 class="logo__text">
+                Dream<span class="logo__highlight">Travels</span>
+              </h1>
+            </a>
+          </div>
+
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Toggle navigation menu"
+          />
+          <label
+            for="menu-toggle"
+            class="menu-toggle-label"
+            aria-expanded="false"
+          >
+            <span class="hamburger"></span>
+            <span class="sr-only">Menu</span>
+          </label>
+
+          <nav class="nav" id="main-nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link nav__link--active"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="destinations.html" class="nav__link">Destinations</a>
+              </li>
+              <li class="nav__item">
+                <a href="packages.html" class="nav__link">Packages</a>
+              </li>
+              <li class="nav__item">
+                <a href="contact.html" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    
+
     <main id="main-content">
-        <section class="hero">
-            <div class="hero__overlay">
-                <div class="container">
-                    <div class="hero__content">
-                        <h2 class="hero__title animate-fade-up">Experience the World</h2>
-                        <p class="hero__subtitle animate-fade-up animate-delay-1">Curated tours & bespoke packages that create unforgettable memories</p>
-                        <div class="hero__buttons animate-fade-up animate-delay-2">
-                            <a href="packages.html" class="btn btn--primary">Explore Packages</a>
-                            <a href="contact.html" class="btn btn--secondary">Plan Your Trip</a>
-                        </div>
-                    </div>
-                </div>
+      <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="assets/hero-main-bg.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero__overlay">
+          <div class="container">
+            <div class="hero__content">
+              <h2 class="hero__title animate-fade-up">Experience the World</h2>
+              <p class="hero__subtitle animate-fade-up animate-delay-1">
+                Curated tours & bespoke packages that create unforgettable
+                memories
+              </p>
+              <div class="hero__buttons animate-fade-up animate-delay-2">
+                <a href="packages.html" class="btn btn--primary"
+                  >Explore Packages</a
+                >
+                <a href="contact.html" class="btn btn--secondary"
+                  >Plan Your Trip</a
+                >
+              </div>
             </div>
-        </section>
-        
-        
-        <section class="section section--value">
-            <div class="container">
-                <h2 class="section__title">Why Choose Dream Travels?</h2>
-                <p class="section__subtitle">We craft travel experiences that go beyond the ordinary</p>
-                
-                <div class="grid grid--3-col">
-                    <article class="value-card">
-                        <i class="fa-solid fa-plane"></i>
-                        <h3 class="value-card__title">Tailored Experiences</h3>
-                        <p class="value-card__description">Every journey is customized to your preferences, ensuring a personal touch in every detail.</p>
-                    </article>
-                    
-                    <article class="value-card">
-                        <i class="fa-solid fa-earth-americas"></i>
-                        <h3 class="value-card__title">Global Expertise</h3>
-                        <p class="value-card__description">Our travel specialists have firsthand knowledge of destinations across six continents.</p>
-                    </article>
-                    
-                    <article class="value-card">
-                        <i class="fa-solid fa-star"></i>
-                        <h3 class="value-card__title">Premium Support</h3>
-                        <p class="value-card__description">24/7 assistance during your travels and meticulous planning before you depart.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section section--destinations">
-            <div class="container">
-                <h2 class="section__title">Featured Destinations</h2>
-                <p class="section__subtitle">Discover our most sought-after travel spots</p>
-                
-                <div class="grid grid--3-col">
-                    <article class="card">
-                        <a href="destinations.html#istanbul" class="card__link">
-                            <div class="card__image-container">
-                                <img src="assets/istanbul.jpg" 
-                                     alt="Istanbul skyline with historic mosques and modern buildings" 
-                                     class="card__image">
-                                <div class="card__overlay">
-                                    <span class="card__cta">View Details</span>
-                                </div>
-                            </div>
-                            <div class="card__content">
-                                <h3 class="card__title">Istanbul</h3>
-                                <p class="card__description">Where East meets West in a captivating blend of history, culture, and vibrant markets.</p>
-                                <div class="card__meta">
-                                    <span class="card__meta-item">From PKR12,999</span>
-                                    <span class="card__meta-item">7+ Days</span>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    <article class="card">
-                        <a href="destinations.html#bali" class="card__link">
-                            <div class="card__image-container">
-                                <img src="assets/bali.jpg" 
-                                     alt="Bali beach with turquoise water and palm trees" 
-                                     class="card__image">
-                                <div class="card__overlay">
-                                    <span class="card__cta">View Details</span>
-                                </div>
-                            </div>
-                            <div class="card__content">
-                                <h3 class="card__title">Bali</h3>
-                                <p class="card__description">Tropical paradise with lush landscapes, spiritual retreats, and world-class beaches.</p>
-                                <div class="card__meta">
-                                    <span class="card__meta-item">From PKR18,999</span>
-                                    <span class="card__meta-item">10+ Days</span>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    <article class="card">
-                        <a href="destinations.html#swiss-alps" class="card__link">
-                            <div class="card__image-container">
-                                <img src="assets/switzerland.jpg" 
-                                     alt="Swiss Alps mountain range with snow-capped peaks" 
-                                     class="card__image">
-                                <div class="card__overlay">
-                                    <span class="card__cta">View Details</span>
-                                </div>
-                            </div>
-                            <div class="card__content">
-                                <h3 class="card__title">Swiss Alps</h3>
-                                <p class="card__description">Breathtaking alpine scenery, charming villages, and year-round outdoor adventures.</p>
-                                <div class="card__meta">
-                                    <span class="card__meta-item">From PKR24,999</span>
-                                    <span class="card__meta-item">8+ Days</span>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-                
-                <div class="section__footer">
-                    <a href="destinations.html" class="btn btn--outline">View All Destinations</a>
-                </div>
-            </div>
-        </section>
-        
-        <section class="section section--packages">
-            <div class="container">
-                <h2 class="section__title">Popular Travel Packages</h2>
-                <p class="section__subtitle">Choose the perfect package for your travel style</p>
-                
-                <div class="grid grid--3-col">
-                    <article class="package-card">
-                        <div class="package-card__header">
-                            <h3 class="package-card__title">Explorer</h3>
-                            <div class="package-card__price">PKR9,999<span class="package-card__price-period">/person</span></div>
-                            <p class="package-card__subtitle">Starter Package</p>
-                        </div>
-                        <div class="package-card__content">
-                            <ul class="package-card__features">
-                                <li class="package-card__feature">4-6 Day Itinerary</li>
-                                <li class="package-card__feature">3-Star Accommodation</li>
-                                <li class="package-card__feature">Guided City Tours</li>
-                                <li class="package-card__feature">Basic Travel Insurance</li>
-                                <li class="package-card__feature">Airport Transfers</li>
-                            </ul>
-                            <a href="contact.html?package=explorer" class="btn btn--primary btn--block">Book Now</a>
-                        </div>
-                    </article>
-                    
-                    <article class="package-card package-card--featured">
-                        <div class="package-card__badge">Most Popular</div>
-                        <div class="package-card__header">
-                            <h3 class="package-card__title">Classic Escape</h3>
-                            <div class="package-card__price">PKR18,999<span class="package-card__price-period">/person</span></div>
-                            <p class="package-card__subtitle">Standard Package</p>
-                        </div>
-                        <div class="package-card__content">
-                            <ul class="package-card__features">
-                                <li class="package-card__feature">7-10 Day Itinerary</li>
-                                <li class="package-card__feature">4-Star Accommodation</li>
-                                <li class="package-card__feature">All Meals Included</li>
-                                <li class="package-card__feature">Comprehensive Travel Insurance</li>
-                                <li class="package-card__feature">Private Guided Tours</li>
-                                <li class="package-card__feature">Local Experiences</li>
-                            </ul>
-                            <a href="contact.html?package=classic-escape" class="btn btn--primary btn--block">Book Now</a>
-                        </div>
-                    </article>
-                    
-                    <article class="package-card">
-                        <div class="package-card__header">
-                            <h3 class="package-card__title">Premium Voyage</h3>
-                            <div class="package-card__price">PKR39,999<span class="package-card__price-period">/person</span></div>
-                            <p class="package-card__subtitle">Luxury Package</p>
-                        </div>
-                        <div class="package-card__content">
-                            <ul class="package-card__features">
-                                <li class="package-card__feature">10-14 Day Itinerary</li>
-                                <li class="package-card__feature">5-Star Luxury Hotels</li>
-                                <li class="package-card__feature">Gourmet Dining Experience</li>
-                                <li class="package-card__feature">VIP Airport Services</li>
-                                <li class="package-card__feature">Private Chauffeur</li>
-                                <li class="package-card__feature">Exclusive Access Tours</li>
-                                <li class="package-card__feature">24/7 Concierge</li>
-                            </ul>
-                            <a href="contact.html?package=premium-voyage" class="btn btn--primary btn--block">Book Now</a>
-                        </div>
-                    </article>
-                </div>
-                
-                <div class="section__footer">
-                    <a href="packages.html" class="btn btn--outline">Compare All Packages</a>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section section--testimonials">
-            <div class="container">
-                <h2 class="section__title">Traveler Stories</h2>
-                <p class="section__subtitle">See what our customers say about their experiences</p>
-                
-                <div class="grid grid--3-col">
-                    <blockquote class="testimonial">
-                        <div class="testimonial__content">
-                            <p class="testimonial__text">"Our Swiss Alps trip was absolutely magical. Every detail was perfectly arranged, from the cozy mountain lodges to the private guided hikes."</p>
-                        </div>
-                        <footer class="testimonial__footer">
-                            <div class="testimonial__author">Sarah Johnson</div>
-                            <div class="testimonial__destination">Swiss Alps Adventure</div>
-                        </footer>
-                    </blockquote>
-                    
-                    <blockquote class="testimonial">
-                        <div class="testimonial__content">
-                            <p class="testimonial__text">"Dream Travels made our Bali honeymoon unforgettable. The private villa, cultural experiences, and seamless transfers exceeded all expectations."</p>
-                        </div>
-                        <footer class="testimonial__footer">
-                            <div class="testimonial__author">Michael &amp; Lisa Chen</div>
-                            <div class="testimonial__destination">Bali Honeymoon</div>
-                        </footer>
-                    </blockquote>
-                    
-                    <blockquote class="testimonial">
-                        <div class="testimonial__content">
-                            <p class="testimonial__text">"The Premium Voyage package to Istanbul was worth every penny. Exclusive access to historical sites and gourmet dining made it a trip of a lifetime."</p>
-                        </div>
-                        <footer class="testimonial__footer">
-                            <div class="testimonial__author">Robert Williams</div>
-                            <div class="testimonial__destination">Istanbul Luxury Tour</div>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section section--cta">
-            <div class="container">
-                <div class="cta">
-                    <div class="cta__content">
-                        <h2 class="cta__title">Ready for Your Next Adventure?</h2>
-                        <p class="cta__description">Contact our travel experts today to start planning your perfect getaway. We'll handle every detail so you can focus on making memories.</p>
-                        <div class="cta__buttons">
-                            <a href="contact.html" class="btn btn--primary btn--large">Get in Touch</a>
-                            <a href="tel:+11234567890" class="btn btn--secondary btn--large">Call: (123) 456-7890</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    
-    
-    <footer class="footer">
-        <div class="container">
-            <div class="grid grid--4-col">
-                <div class="footer__section">
-                    <h3 class="footer__title">Dream Travels</h3>
-                    <p class="footer__description">Creating unforgettable travel experiences since 2010. Based in Lahore, serving travelers worldwide.</p>
-                    <div class="footer__contact">
-                       
-                        <p><i class="fa-solid fa-location-pin"></i> Lahore (Remote)</p>
-                        <p><i class="fa-solid fa-message"></i> info@dreamtravels.com</p>
-                        <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
-                    </div>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Quick Links</h3>
-                    <ul class="footer__links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="packages.html">Packages</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Legal</h3>
-                    <ul class="footer__links">
-                        <li><a href="./privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Connect With Us</h3>
-                    <ul class="footer__links">
-                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.x.com" target="_blank">X</a></li>
-                        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2025 Dream Travels. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section section--value">
+        <div class="container">
+          <h2 class="section__title">Why Choose Dream Travels?</h2>
+          <p class="section__subtitle">
+            We craft travel experiences that go beyond the ordinary
+          </p>
+
+          <div class="grid grid--3-col">
+            <article class="value-card">
+              <i class="fa-solid fa-plane"></i>
+              <h3 class="value-card__title">Tailored Experiences</h3>
+              <p class="value-card__description">
+                Every journey is customized to your preferences, ensuring a
+                personal touch in every detail.
+              </p>
+            </article>
+
+            <article class="value-card">
+              <i class="fa-solid fa-earth-americas"></i>
+              <h3 class="value-card__title">Global Expertise</h3>
+              <p class="value-card__description">
+                Our travel specialists have firsthand knowledge of destinations
+                across six continents.
+              </p>
+            </article>
+
+            <article class="value-card">
+              <i class="fa-solid fa-star"></i>
+              <h3 class="value-card__title">Premium Support</h3>
+              <p class="value-card__description">
+                24/7 assistance during your travels and meticulous planning
+                before you depart.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--destinations">
+        <div class="container">
+          <h2 class="section__title">Featured Destinations</h2>
+          <p class="section__subtitle">
+            Discover our most sought-after travel spots
+          </p>
+
+          <div class="grid grid--3-col">
+            <article class="card">
+              <a href="destinations.html#istanbul" class="card__link">
+                <div class="card__image-container">
+                  <img
+                    src="assets/istanbul.jpg"
+                    alt="Istanbul skyline with historic mosques and modern buildings"
+                    class="card__image"
+                  />
+                  <div class="card__overlay">
+                    <span class="card__cta">View Details</span>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Istanbul</h3>
+                  <p class="card__description">
+                    Where East meets West in a captivating blend of history,
+                    culture, and vibrant markets.
+                  </p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">From PKR12,999</span>
+                    <span class="card__meta-item">7+ Days</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="card">
+              <a href="destinations.html#bali" class="card__link">
+                <div class="card__image-container">
+                  <img
+                    src="assets/bali.jpg"
+                    alt="Bali beach with turquoise water and palm trees"
+                    class="card__image"
+                  />
+                  <div class="card__overlay">
+                    <span class="card__cta">View Details</span>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Bali</h3>
+                  <p class="card__description">
+                    Tropical paradise with lush landscapes, spiritual retreats,
+                    and world-class beaches.
+                  </p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">From PKR18,999</span>
+                    <span class="card__meta-item">10+ Days</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <article class="card">
+              <a href="destinations.html#swiss-alps" class="card__link">
+                <div class="card__image-container">
+                  <img
+                    src="assets/switzerland.jpg"
+                    alt="Swiss Alps mountain range with snow-capped peaks"
+                    class="card__image"
+                  />
+                  <div class="card__overlay">
+                    <span class="card__cta">View Details</span>
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h3 class="card__title">Swiss Alps</h3>
+                  <p class="card__description">
+                    Breathtaking alpine scenery, charming villages, and
+                    year-round outdoor adventures.
+                  </p>
+                  <div class="card__meta">
+                    <span class="card__meta-item">From PKR24,999</span>
+                    <span class="card__meta-item">8+ Days</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="section__footer">
+            <a href="destinations.html" class="btn btn--outline"
+              >View All Destinations</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--packages">
+        <div class="container">
+          <h2 class="section__title">Popular Travel Packages</h2>
+          <p class="section__subtitle">
+            Choose the perfect package for your travel style
+          </p>
+
+          <div class="grid grid--3-col">
+            <article class="package-card">
+              <div class="package-card__header">
+                <h3 class="package-card__title">Explorer</h3>
+                <div class="package-card__price">
+                  PKR9,999<span class="package-card__price-period"
+                    >/person</span
+                  >
+                </div>
+                <p class="package-card__subtitle">Starter Package</p>
+              </div>
+              <div class="package-card__content">
+                <ul class="package-card__features">
+                  <li class="package-card__feature">4-6 Day Itinerary</li>
+                  <li class="package-card__feature">3-Star Accommodation</li>
+                  <li class="package-card__feature">Guided City Tours</li>
+                  <li class="package-card__feature">Basic Travel Insurance</li>
+                  <li class="package-card__feature">Airport Transfers</li>
+                </ul>
+                <a
+                  href="contact.html?package=explorer"
+                  class="btn btn--primary btn--block"
+                  >Book Now</a
+                >
+              </div>
+            </article>
+
+            <article class="package-card package-card--featured">
+              <div class="package-card__badge">Most Popular</div>
+              <div class="package-card__header">
+                <h3 class="package-card__title">Classic Escape</h3>
+                <div class="package-card__price">
+                  PKR18,999<span class="package-card__price-period"
+                    >/person</span
+                  >
+                </div>
+                <p class="package-card__subtitle">Standard Package</p>
+              </div>
+              <div class="package-card__content">
+                <ul class="package-card__features">
+                  <li class="package-card__feature">7-10 Day Itinerary</li>
+                  <li class="package-card__feature">4-Star Accommodation</li>
+                  <li class="package-card__feature">All Meals Included</li>
+                  <li class="package-card__feature">
+                    Comprehensive Travel Insurance
+                  </li>
+                  <li class="package-card__feature">Private Guided Tours</li>
+                  <li class="package-card__feature">Local Experiences</li>
+                </ul>
+                <a
+                  href="contact.html?package=classic-escape"
+                  class="btn btn--primary btn--block"
+                  >Book Now</a
+                >
+              </div>
+            </article>
+
+            <article class="package-card">
+              <div class="package-card__header">
+                <h3 class="package-card__title">Premium Voyage</h3>
+                <div class="package-card__price">
+                  PKR39,999<span class="package-card__price-period"
+                    >/person</span
+                  >
+                </div>
+                <p class="package-card__subtitle">Luxury Package</p>
+              </div>
+              <div class="package-card__content">
+                <ul class="package-card__features">
+                  <li class="package-card__feature">10-14 Day Itinerary</li>
+                  <li class="package-card__feature">5-Star Luxury Hotels</li>
+                  <li class="package-card__feature">
+                    Gourmet Dining Experience
+                  </li>
+                  <li class="package-card__feature">VIP Airport Services</li>
+                  <li class="package-card__feature">Private Chauffeur</li>
+                  <li class="package-card__feature">Exclusive Access Tours</li>
+                  <li class="package-card__feature">24/7 Concierge</li>
+                </ul>
+                <a
+                  href="contact.html?package=premium-voyage"
+                  class="btn btn--primary btn--block"
+                  >Book Now</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <div class="section__footer">
+            <a href="packages.html" class="btn btn--outline"
+              >Compare All Packages</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--testimonials">
+        <div class="container">
+          <h2 class="section__title">Traveler Stories</h2>
+          <p class="section__subtitle">
+            See what our customers say about their experiences
+          </p>
+
+          <div class="grid grid--3-col">
+            <blockquote class="testimonial">
+              <div class="testimonial__content">
+                <p class="testimonial__text">
+                  "Our Swiss Alps trip was absolutely magical. Every detail was
+                  perfectly arranged, from the cozy mountain lodges to the
+                  private guided hikes."
+                </p>
+              </div>
+              <footer class="testimonial__footer">
+                <div class="testimonial__author">Sarah Johnson</div>
+                <div class="testimonial__destination">Swiss Alps Adventure</div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <div class="testimonial__content">
+                <p class="testimonial__text">
+                  "Dream Travels made our Bali honeymoon unforgettable. The
+                  private villa, cultural experiences, and seamless transfers
+                  exceeded all expectations."
+                </p>
+              </div>
+              <footer class="testimonial__footer">
+                <div class="testimonial__author">Michael &amp; Lisa Chen</div>
+                <div class="testimonial__destination">Bali Honeymoon</div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial">
+              <div class="testimonial__content">
+                <p class="testimonial__text">
+                  "The Premium Voyage package to Istanbul was worth every penny.
+                  Exclusive access to historical sites and gourmet dining made
+                  it a trip of a lifetime."
+                </p>
+              </div>
+              <footer class="testimonial__footer">
+                <div class="testimonial__author">Robert Williams</div>
+                <div class="testimonial__destination">Istanbul Luxury Tour</div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta__content">
+              <h2 class="cta__title">Ready for Your Next Adventure?</h2>
+              <p class="cta__description">
+                Contact our travel experts today to start planning your perfect
+                getaway. We'll handle every detail so you can focus on making
+                memories.
+              </p>
+              <div class="cta__buttons">
+                <a href="contact.html" class="btn btn--primary btn--large"
+                  >Get in Touch</a
+                >
+                <a href="tel:+11234567890" class="btn btn--secondary btn--large"
+                  >Call: (123) 456-7890</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid--4-col">
+          <div class="footer__section">
+            <h3 class="footer__title">Dream Travels</h3>
+            <p class="footer__description">
+              Creating unforgettable travel experiences since 2010. Based in
+              Lahore, serving travelers worldwide.
+            </p>
+            <div class="footer__contact">
+              <p><i class="fa-solid fa-location-pin"></i> Lahore (Remote)</p>
+              <p><i class="fa-solid fa-message"></i> info@dreamtravels.com</p>
+              <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Legal</h3>
+            <ul class="footer__links">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Connect With Us</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li><a href="https://www.x.com" target="_blank">X</a></li>
+              <li>
+                <a href="https://www.youtube.com" target="_blank">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2025 Dream Travels. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

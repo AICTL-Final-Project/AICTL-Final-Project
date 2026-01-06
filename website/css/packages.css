@@ -15,30 +15,30 @@ gap: 10px;
 
 .toggle-label {
   display: inline-block;
-  padding: var(--space-sm) var(--space-lg);
-  background-color: var(--color-light);
-  border-radius: var(--radius-md);
+  padding: 0.5rem 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 150ms ease;
 }
 
 .toggle-input:checked + .toggle-label {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #2a9d8f;
+  color: #ffffff;
 }
 
 .toggle-label:hover {
-  background-color: var(--color-gray-light);
+  background-color: #e9ecef;
 }
 
 .toggle-input:checked + .toggle-label:hover {
-  background-color: var(--color-primary-dark);
+  background-color: #21867a;
 }
 
 /* Package comparison table */
 .comparison-table-container {
   overflow-x: auto;
-  margin-bottom: var(--space-lg);
+  margin-bottom: 1.5rem;
 }
 
 .comparison-table {
@@ -49,18 +49,18 @@ gap: 10px;
 
 .comparison-table th,
 .comparison-table td {
-  padding: var(--space-md);
+  padding: 1rem;
   text-align: center;
-  border: 1px solid var(--color-gray-light);
+  border: 1px solid #e9ecef;
 }
 
 .comparison-table thead th {
-  background-color: var(--color-light);
+  background-color: #f8f9fa;
   font-weight: 600;
 }
 
 .comparison-table tbody th {
-  background-color: var(--color-light);
+  background-color: #f8f9fa;
   text-align: center;
   font-weight: 600;
 }
@@ -70,7 +70,7 @@ gap: 10px;
 }
 
 .table-note {
-  font-size: var(--fs-sm);
-  color: var(--text-muted);
+  font-size: 0.875rem;
+  color: #adb5bd;
   font-style: italic;
 }
