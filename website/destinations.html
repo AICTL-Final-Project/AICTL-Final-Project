@@ -1,723 +1,1087 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/destination.css">
-    
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/destination.css" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
     <title>Destinations - Dream Travels</title>
-    
-</head>
-<body>    
-    
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                
-                <div class="logo">
-                    <a href="index.html" class="logo__link">
-                        <h1 class="logo__text">Dream<span class="logo__highlight">Travels</span></h1>
-                    </a>
-                </div>
-                
-                
-                <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
-                <label for="menu-toggle" class="menu-toggle-label" aria-expanded="false">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="sr-only">Menu</span>
-                </label>
-                
-                
-                <nav class="nav" id="main-nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="destinations.html" class="nav__link nav__link--active">Destinations</a></li>
-                        <li class="nav__item"><a href="packages.html" class="nav__link">Packages</a></li>
-                        <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <h1 class="logo__text">
+                Dream<span class="logo__highlight">Travels</span>
+              </h1>
+            </a>
+          </div>
+
+          <input
+            type="checkbox"
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Toggle navigation menu"
+          />
+          <label
+            for="menu-toggle"
+            class="menu-toggle-label"
+            aria-expanded="false"
+          >
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="sr-only">Menu</span>
+          </label>
+
+          <nav class="nav" id="main-nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="destinations.html" class="nav__link nav__link--active"
+                  >Destinations</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="packages.html" class="nav__link">Packages</a>
+              </li>
+              <li class="nav__item">
+                <a href="contact.html" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    
-    
+
     <main id="main-content">
-        
-        <section class="hero hero--destinations">
-            <div class="hero__overlay">
-                <div class="container">
-                    <div class="hero__content">
-                        <h2 class="hero__title animate-fade-up">Explore Our Destinations</h2>
-                        <p class="hero__subtitle animate-fade-up animate-delay-1">Discover breathtaking locations curated by our travel experts</p>
-                        <div class="hero__buttons animate-fade-up animate-delay-2">
-                            <a href="#destinations-grid" class="btn btn--primary">View Destinations</a>
-                            <a href="contact.html" class="btn btn--secondary">Plan Your Trip</a>
-                        </div>
-                    </div>
-                </div>
+      <section class="hero hero--destinations">
+        <div class="hero__overlay">
+          <div class="container">
+            <div class="hero__content">
+              <h2 class="hero__title animate-fade-up">
+                Explore Our Destinations
+              </h2>
+              <p class="hero__subtitle animate-fade-up animate-delay-1">
+                Discover breathtaking locations curated by our travel experts
+              </p>
+              <div class="hero__buttons animate-fade-up animate-delay-2">
+                <a href="#destinations-grid" class="btn btn--primary"
+                  >View Destinations</a
+                >
+                <a href="contact.html" class="btn btn--secondary"
+                  >Plan Your Trip</a
+                >
+              </div>
             </div>
-        </section>
-        
-        
-        <section class="section section--filters">
-            <div class="container">
-                <h2 class="section__title">Find Your Perfect Destination</h2>
-                
-                
-                <div class="filter-container">
-                    <div class="filter-options">
-                        <input type="radio" id="filter-all" name="destination-filter" class="filter-input" checked>
-                        <label for="filter-all" class="filter-label">All Destinations</label>
+          </div>
+        </div>
+      </section>
 
-                        <input type="radio" id="filter-pakistan" name="destination-filter" class="filter-input">
-                        <label for="filter-pakistan" class="filter-label">Pakistan</label>
-                        
-                        <input type="radio" id="filter-europe" name="destination-filter" class="filter-input">
-                        <label for="filter-europe" class="filter-label">Europe</label>
-                        
-                        <input type="radio" id="filter-asia" name="destination-filter" class="filter-input">
-                        <label for="filter-asia" class="filter-label">Asia</label>
-                        
-                        <input type="radio" id="filter-beach" name="destination-filter" class="filter-input">
-                        <label for="filter-beach" class="filter-label">Beach</label>
-                        
-                        <input type="radio" id="filter-adventure" name="destination-filter" class="filter-input">
-                        <label for="filter-adventure" class="filter-label">Adventure</label>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section class="section" id="destinations-grid">
-            <div class="container">
-                <div class="grid grid--3-col destinations-grid">
-                    
-                    <article class="destination-card" data-region="europe asia" data-category="cultural adventure">
-                        <div class="destination-card__image-container">
-                            <img src="assets/istanbul.jpg" 
-                                 alt="Istanbul skyline with historic mosques and modern buildings" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#istanbul-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--europe">Europe</span>
-                                <span class="destination-card__badge destination-card__badge--asia">Asia</span>
-                            </div>
-                            <h3 class="destination-card__title">Istanbul, Turkey</h3>
-                            <p class="destination-card__description">Where East meets West in a captivating blend of history, culture, and vibrant markets.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: Spring & Fall</span>
-                                <span class="destination-card__meta-item">From PKR12,999</span>
-                            </div>
-                            <a href="#istanbul-modal" class="btn btn--outline btn--small">Explore Istanbul</a>
-                        </div>
-                    </article>
-                    
-                    <article class="destination-card" data-region="asia" data-category="beach relaxation">
-                        <div class="destination-card__image-container">
-                            <img src="assets/bali.jpg" 
-                                 alt="Bali beach with turquoise water and palm trees" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#bali-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--asia">Asia</span>
-                                <span class="destination-card__badge destination-card__badge--beach">Beach</span>
-                            </div>
-                            <h3 class="destination-card__title">Bali, Indonesia</h3>
-                            <p class="destination-card__description">Tropical paradise with lush landscapes, spiritual retreats, and world-class beaches.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: April-October</span>
-                                <span class="destination-card__meta-item">From PKR18,999</span>
-                            </div>
-                            <a href="#bali-modal" class="btn btn--outline btn--small">Explore Bali</a>
-                        </div>
-                    </article>
-
-
-                    <article class="destination-card" data-region="gilgit pakistan" data-category="pakistan cultural">
-                        <div class="destination-card__image-container">
-                            <img src="assets/hunza.jpg" 
-                                 alt="Hunza Valley with mountains and river in Gilgit-Baltistan, Pakistan" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#hunza-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--europe">Hunza Valley</span>
-                                <span class="destination-card__badge destination-card__badge--asia">Pakistan</span>
-                            </div>
-                            <h3 class="destination-card__title">Hunza, Pakistan</h3>
-                            <p class="destination-card__description">Where the mountains and rivers meet in a captivating blend of culture, history, and natural beauty.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: Spring & Fall</span>
-                                <span class="destination-card__meta-item">From PKR12,999</span>
-                            </div>
-                            <a href="#hunza-modal" class="btn btn--outline btn--small">Explore Hunza</a>
-                        </div>
-                    </article>
-                    
-                    
-                    <article class="destination-card" data-region="europe" data-category="adventure nature">
-                        <div class="destination-card__image-container">
-                            <img src="assets/switzerland.jpg" 
-                                 alt="Swiss Alps mountain range with snow-capped peaks" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#swiss-alps-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--europe">Europe</span>
-                                <span class="destination-card__badge destination-card__badge--adventure">Adventure</span>
-                            </div>
-                            <h3 class="destination-card__title">Swiss Alps, Switzerland</h3>
-                            <p class="destination-card__description">Breathtaking alpine scenery, charming villages, and year-round outdoor adventures.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: Summer & Winter</span>
-                                <span class="destination-card__meta-item">From PKR24,999</span>
-                            </div>
-                            <a href="#swiss-alps-modal" class="btn btn--outline btn--small">Explore Swiss Alps</a>
-                        </div>
-                    </article>
-                    
-                    
-                    <article class="destination-card" data-region="asia" data-category="cultural adventure">
-                        <div class="destination-card__image-container">
-                            <img src="assets/tokyo.jpg" 
-                                 alt="Traditional Japanese temple with cherry blossoms in Kyoto" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#japan-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--asia">Asia</span>
-                                <span class="destination-card__badge destination-card__badge--cultural">Cultural</span>
-                            </div>
-                            <h3 class="destination-card__title">Kyoto & Tokyo, Japan</h3>
-                            <p class="destination-card__description">Ancient traditions meet futuristic innovation in this captivating island nation.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: Spring & Fall</span>
-                                <span class="destination-card__meta-item">From PKR27,999</span>
-                            </div>
-                            <a href="#japan-modal" class="btn btn--outline btn--small">Explore Japan</a>
-                        </div>
-                    </article>
-
-                    <article class="destination-card" data-region="kaghan pakistan" data-category="pakistan cultural">
-                        <div class="destination-card__image-container">
-                            <img src="assets/kaghan.jpg" 
-                                 alt="Kaghan Valley with mountains and river in Pakistan" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#kaghan-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--europe">Kaghan Valley</span>
-                                <span class="destination-card__badge destination-card__badge--asia">Pakistan</span>
-                            </div>
-                            <h3 class="destination-card__title">Kaghan Valley, Pakistan</h3>
-                            <p class="destination-card__description">A captivating blend of history, culture, and natural beauty in this enchanting valley.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: Spring & Fall</span>
-                                <span class="destination-card__meta-item">From PKR12,999</span>
-                            </div>
-                            <a href="#kaghan-modal" class="btn btn--outline btn--small">Explore Kaghan</a>
-                        </div>
-                    </article>
-                    
-                    
-                    <article class="destination-card" data-region="europe" data-category="beach cultural">
-                        <div class="destination-card__image-container">
-                            <img src="assets/santorini.jpg" 
-                                 alt="Santorini Greece with white buildings and blue domes overlooking the sea" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#greece-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--europe">Europe</span>
-                                <span class="destination-card__badge destination-card__badge--beach">Beach</span>
-                            </div>
-                            <h3 class="destination-card__title">Santorini, Greece</h3>
-                            <p class="destination-card__description">Stunning white-washed architecture, crystal-clear waters, and ancient history.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: May-October</span>
-                                <span class="destination-card__meta-item">From PKR21,999</span>
-                            </div>
-                            <a href="#greece-modal" class="btn btn--outline btn--small">Explore Greece</a>
-                        </div>
-                    </article>
-                    
-                    
-                    <article class="destination-card" data-region="oceania" data-category="adventure nature">
-                        <div class="destination-card__image-container">
-                            <img src="assets/newzeeland.jpg" 
-                                 alt="Milford Sound in New Zealand with dramatic mountains and waterfalls" 
-                                 class="destination-card__image">
-                            <div class="destination-card__overlay">
-                                <a href="#newzealand-modal" class="destination-card__cta">View Details</a>
-                            </div>
-                        </div>
-                        <div class="destination-card__content">
-                            <div class="destination-card__badges">
-                                <span class="destination-card__badge destination-card__badge--adventure">Adventure</span>
-                                <span class="destination-card__badge destination-card__badge--nature">Nature</span>
-                            </div>
-                            <h3 class="destination-card__title">South Island, New Zealand</h3>
-                            <p class="destination-card__description">Dramatic landscapes, adventure sports, and Middle-earth filming locations.</p>
-                            <div class="destination-card__meta">
-                                <span class="destination-card__meta-item">Best Time: Dec-Feb (Summer)</span>
-                                <span class="destination-card__meta-item">From PKR32,999</span>
-                            </div>
-                            <a href="#newzealand-modal" class="btn btn--outline btn--small">Explore New Zealand</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        
-        
-        
-        
-        <div id="istanbul-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">Istanbul, Turkey</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/istanbul.jpg" 
-                                 alt="Istanbul skyline with historic mosques and modern buildings">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">Istanbul, a city that straddles Europe and Asia across the Bosphorus Strait, is a mesmerizing blend of ancient and modern. Its Old City reflects the cultural influences of the many empires that once ruled here.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Visit the iconic Hagia Sophia and Blue Mosque</li>
-                                    <li>Explore the Grand Bazaar, one of the world's largest covered markets</li>
-                                    <li>Cruise the Bosphorus for stunning city views</li>
-                                    <li>Experience authentic Turkish cuisine and culture</li>
-                                    <li>Discover the underground Basilica Cistern</li>
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> Spring (April-May) and Fall (September-October)
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 5-7 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR12,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About Istanbul</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div id="bali-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">Bali, Indonesia</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/bali.jpg" 
-                                 alt="Bali beach with turquoise water and palm trees">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">Bali is a tropical paradise known for its forested volcanic mountains, iconic rice paddies, beaches, and coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple and thousands of Hindu temples.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Relax on pristine beaches in Seminyak and Nusa Dua</li>
-                                    <li>Explore ancient temples like Uluwatu and Tanah Lot</li>
-                                    <li>Experience traditional Balinese dance and culture</li>
-                                    <li>Visit the iconic Tegallalang Rice Terraces</li>
-                                    <li>Enjoy world-class surfing, diving, and yoga retreats</li>
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> April to October (dry season)
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 7-10 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR18,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About Bali</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div id="swiss-alps-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">Swiss Alps, Switzerland</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/switzerland.jpg" 
-                                 alt="Swiss Alps mountain range with snow-capped peaks">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">The Swiss Alps offer some of Europe's most breathtaking mountain scenery. From world-class ski resorts in winter to hiking and mountaineering in summer, the region provides year-round adventure amidst pristine natural beauty.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Ski or snowboard in world-renowned resorts like Zermatt and St. Moritz</li>
-                                    <li>Hike the spectacular trails of Jungfrau region</li>
-                                    <li>Ride scenic trains like the Glacier Express</li>
-                                    <li>Visit charming alpine villages and enjoy Swiss hospitality</li>
-                                    <li>Experience summer paragliding and winter skiing</li>
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> December-March for skiing, June-September for hiking
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 7-10 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR24,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About Swiss Alps</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div id="japan-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">Kyoto & Tokyo, Japan</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/tokyo.jpg" 
-                                 alt="Traditional Japanese temple with cherry blossoms in Kyoto">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">Japan offers a perfect contrast between ancient traditions and cutting-edge modernity. Experience the serene temples and gardens of Kyoto alongside the neon-lit streets and technological wonders of Tokyo.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Visit Kyoto's iconic Fushimi Inari Shrine and Kinkaku-ji Temple</li>
-                                    <li>Experience the cherry blossom season (late March to early April)</li>
-                                    <li>Explore Tokyo's vibrant neighborhoods like Shibuya and Shinjuku</li>
-                                    <li>Ride the bullet train between cities</li>
-                                    <li>Enjoy authentic sushi, ramen, and tea ceremonies</li>
-                                    
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> Spring (cherry blossoms) and Fall (colorful foliage)
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 10-14 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR27,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About Japan</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div id="greece-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">Santorini, Greece</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/santorini.jpg" 
-                                 alt="Santorini Greece with white buildings and blue domes overlooking the sea">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">Santorini is famous for its dramatic views, stunning sunsets, white-washed houses, and beautiful beaches. This volcanic island in the Cyclades group of the Greek islands is one of the most picturesque destinations in the world.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Witness breathtaking sunsets in Oia</li>
-                                    <li>Explore the unique black and red sand beaches</li>
-                                    <li>Visit ancient archaeological sites like Akrotiri</li>
-                                    <li>Enjoy sailing tours around the caldera</li>
-                                    <li>Taste exquisite Greek cuisine and local wines</li>
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> May to October
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 5-7 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR21,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About Greece</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div id="newzealand-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">South Island, New Zealand</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/newzealand.jpg" 
-                                 alt="Milford Sound in New Zealand with dramatic mountains and waterfalls">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">New Zealand's South Island is an adventure lover's paradise with its snow-capped mountains, glaciers, fjords, and lush rainforests. It's also home to many filming locations from "The Lord of the Rings" trilogy.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Cruise through spectacular Milford Sound</li>
-                                    <li>Explore the adventure capital Queenstown</li>
-                                    <li>Visit the Franz Josef and Fox Glaciers</li>
-                                    <li>Experience Middle-earth at Hobbiton (North Island)</li>
-                                    <li>Enjoy hiking, bungee jumping, skiing, and more</li>
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> December to February (summer)
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 10-14 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR32,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About New Zealand</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="hunza-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">Hunza Valley, Pakistan</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/hunza.jpg" 
-                                 alt="Hunza Valley with mountains and river in Gilgit-Baltistan, Pakistan">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">Hunza Valley is a stunning mountain valley located in the Gilgit-Baltistan region of Pakistan. Known for its breathtaking landscapes, ancient Buddhist monasteries, and rich cultural heritage, Hunza offers a unique blend of natural beauty and traditional charm.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Explore the ancient Buddhist monasteries of Hunza</li>
-                                    <li>Experience the stunning Hunza Valley landscapes</li>
-                                    <li>Visit the historic Baltit Fort and Baltit Palace</li>
-                                    <li>Enjoy trekking through the Karakoram mountain range</li>
-                                    <li>Discover the rich cultural heritage of the Hunza people</li>
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> March to May and September to November
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 10-14 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR32,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About Hunza Valley</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="kaghan-modal" class="modal">
-            <div class="modal__overlay">
-                <div class="modal__container">
-                    <div class="modal__header">
-                        <h3 class="modal__title">Kaghan Valley, Pakistan</h3>
-                        <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-                    </div>
-                    <div class="modal__content">
-                        <div class="modal__image">
-                            <img src="assets/kaghan.jpg" 
-                                 alt="Kaghan Valley with mountains and river in Gilgit-Baltistan, Pakistan">
-                        </div>
-                        <div class="modal__details">
-                            <p class="modal__description">Kaghan Valley is a stunning mountain valley located in the Gilgit-Baltistan region of Pakistan. Known for its breathtaking landscapes, ancient Buddhist monasteries, and rich cultural heritage, Kaghan offers a unique blend of natural beauty and traditional charm.</p>
-                            <div class="modal__highlights">
-                                <h4>Highlights:</h4>
-                                <ul>
-                                    <li>Explore the ancient Buddhist monasteries of Kaghan</li>
-                                    <li>Experience the stunning Kaghan Valley landscapes</li>
-                                    <li>Visit the historic Saif-ul-Maluk lake</li>
-                                    <li>Enjoy trekking through the Himalian mountain range</li>
-                                    <li>Discover the rich cultural heritage of the Kaghan people</li>
-                                </ul>
-                            </div>
-                            <div class="modal__info">
-                                <div class="modal__info-item">
-                                    <strong>Best Time to Visit:</strong> March to May and September to November
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Ideal Duration:</strong> 10-14 days
-                                </div>
-                                <div class="modal__info-item">
-                                    <strong>Starting Price:</strong> PKR32,999 per person
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal__footer">
-                        <a href="contact.html" class="btn btn--primary">Inquire About Kaghan Valley</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <section class="section section--cta">
-            <div class="container">
-                <div class="cta">
-                    <div class="cta__content">
-                        <h2 class="cta__title">Need Help Choosing?</h2>
-                        <p class="cta__description">Our travel experts can help you select the perfect destination based on your interests, budget, and travel style.</p>
-                        <div class="cta__buttons">
-                            <a href="contact.html" class="btn btn--primary btn--large">Contact Our Experts</a>
-                            <a href="packages.html" class="btn btn--secondary btn--large">View Travel Packages</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    
-    <footer class="footer">
+      <section class="section section--filters">
         <div class="container">
-            <div class="grid grid--4-col">
-                <div class="footer__section">
-                    <h3 class="footer__title">Dream Travels</h3>
-                    <p class="footer__description">Creating unforgettable travel experiences since 2010. Based in Lahore, serving travelers worldwide.</p>
-                    <div class="footer__contact">
-                        <p><i class="fa-solid fa-location-pin"></i> Lahore (Remote)</p>
-                        <p><i class="fa-solid fa-message"></i> info@dreamtravels.com</p>
-                        <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
-                    </div>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Quick Links</h3>
-                    <ul class="footer__links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="packages.html">Packages</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Legal</h3>
-                    <ul class="footer__links">
-                        <li><a href="./privacy.html">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__section">
-                    <h3 class="footer__title">Connect With Us</h3>
-                    <ul class="footer__links">
-                        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
-                        <li><a href="https://www.x.com" target="_blank">X</a></li>
-                        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
-                    </ul>
-                </div>
+          <h2 class="section__title">Find Your Perfect Destination</h2>
+
+          <div class="filter-container">
+            <div class="filter-options">
+              <input
+                type="radio"
+                id="filter-all"
+                name="destination-filter"
+                class="filter-input"
+                checked
+              />
+              <label for="filter-all" class="filter-label"
+                >All Destinations</label
+              >
+
+              <input
+                type="radio"
+                id="filter-pakistan"
+                name="destination-filter"
+                class="filter-input"
+              />
+              <label for="filter-pakistan" class="filter-label">Pakistan</label>
+
+              <input
+                type="radio"
+                id="filter-europe"
+                name="destination-filter"
+                class="filter-input"
+              />
+              <label for="filter-europe" class="filter-label">Europe</label>
+
+              <input
+                type="radio"
+                id="filter-asia"
+                name="destination-filter"
+                class="filter-input"
+              />
+              <label for="filter-asia" class="filter-label">Asia</label>
+
+              <input
+                type="radio"
+                id="filter-beach"
+                name="destination-filter"
+                class="filter-input"
+              />
+              <label for="filter-beach" class="filter-label">Beach</label>
+
+              <input
+                type="radio"
+                id="filter-adventure"
+                name="destination-filter"
+                class="filter-input"
+              />
+              <label for="filter-adventure" class="filter-label"
+                >Adventure</label
+              >
             </div>
-            
-            <div class="footer__bottom">
-                <p class="footer__copyright">&copy; 2025 Dream Travels. All rights reserved.</p>
-            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section" id="destinations-grid">
+        <div class="container">
+          <div class="grid grid--3-col destinations-grid">
+            <article
+              class="destination-card"
+              data-region="europe asia"
+              data-category="cultural adventure"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/istanbul.jpg"
+                  alt="Istanbul skyline with historic mosques and modern buildings"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#istanbul-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--europe"
+                    >Europe</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--asia"
+                    >Asia</span
+                  >
+                </div>
+                <h3 class="destination-card__title">Istanbul, Turkey</h3>
+                <p class="destination-card__description">
+                  Where East meets West in a captivating blend of history,
+                  culture, and vibrant markets.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: Spring & Fall</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR12,999</span
+                  >
+                </div>
+                <a href="#istanbul-modal" class="btn btn--outline btn--small"
+                  >Explore Istanbul</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="destination-card"
+              data-region="asia"
+              data-category="beach relaxation"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/bali.jpg"
+                  alt="Bali beach with turquoise water and palm trees"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#bali-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--asia"
+                    >Asia</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--beach"
+                    >Beach</span
+                  >
+                </div>
+                <h3 class="destination-card__title">Bali, Indonesia</h3>
+                <p class="destination-card__description">
+                  Tropical paradise with lush landscapes, spiritual retreats,
+                  and world-class beaches.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: April-October</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR18,999</span
+                  >
+                </div>
+                <a href="#bali-modal" class="btn btn--outline btn--small"
+                  >Explore Bali</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="destination-card"
+              data-region="gilgit pakistan"
+              data-category="pakistan cultural"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/hunza.jpg"
+                  alt="Hunza Valley with mountains and river in Gilgit-Baltistan, Pakistan"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#hunza-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--europe"
+                    >Hunza Valley</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--asia"
+                    >Pakistan</span
+                  >
+                </div>
+                <h3 class="destination-card__title">Hunza, Pakistan</h3>
+                <p class="destination-card__description">
+                  Where the mountains and rivers meet in a captivating blend of
+                  culture, history, and natural beauty.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: Spring & Fall</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR12,999</span
+                  >
+                </div>
+                <a href="#hunza-modal" class="btn btn--outline btn--small"
+                  >Explore Hunza</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="destination-card"
+              data-region="europe"
+              data-category="adventure nature"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/switzerland.jpg"
+                  alt="Swiss Alps mountain range with snow-capped peaks"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#swiss-alps-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--europe"
+                    >Europe</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--adventure"
+                    >Adventure</span
+                  >
+                </div>
+                <h3 class="destination-card__title">Swiss Alps, Switzerland</h3>
+                <p class="destination-card__description">
+                  Breathtaking alpine scenery, charming villages, and year-round
+                  outdoor adventures.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: Summer & Winter</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR24,999</span
+                  >
+                </div>
+                <a href="#swiss-alps-modal" class="btn btn--outline btn--small"
+                  >Explore Swiss Alps</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="destination-card"
+              data-region="asia"
+              data-category="cultural adventure"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/tokyo.jpg"
+                  alt="Traditional Japanese temple with cherry blossoms in Kyoto"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#japan-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--asia"
+                    >Asia</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--cultural"
+                    >Cultural</span
+                  >
+                </div>
+                <h3 class="destination-card__title">Kyoto & Tokyo, Japan</h3>
+                <p class="destination-card__description">
+                  Ancient traditions meet futuristic innovation in this
+                  captivating island nation.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: Spring & Fall</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR27,999</span
+                  >
+                </div>
+                <a href="#japan-modal" class="btn btn--outline btn--small"
+                  >Explore Japan</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="destination-card"
+              data-region="kaghan pakistan"
+              data-category="pakistan cultural"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/kaghan.jpg"
+                  alt="Kaghan Valley with mountains and river in Pakistan"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#kaghan-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--europe"
+                    >Kaghan Valley</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--asia"
+                    >Pakistan</span
+                  >
+                </div>
+                <h3 class="destination-card__title">Kaghan Valley, Pakistan</h3>
+                <p class="destination-card__description">
+                  A captivating blend of history, culture, and natural beauty in
+                  this enchanting valley.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: Spring & Fall</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR12,999</span
+                  >
+                </div>
+                <a href="#kaghan-modal" class="btn btn--outline btn--small"
+                  >Explore Kaghan</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="destination-card"
+              data-region="europe"
+              data-category="beach cultural"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/santorini.jpg"
+                  alt="Santorini Greece with white buildings and blue domes overlooking the sea"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#greece-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--europe"
+                    >Europe</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--beach"
+                    >Beach</span
+                  >
+                </div>
+                <h3 class="destination-card__title">Santorini, Greece</h3>
+                <p class="destination-card__description">
+                  Stunning white-washed architecture, crystal-clear waters, and
+                  ancient history.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: May-October</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR21,999</span
+                  >
+                </div>
+                <a href="#greece-modal" class="btn btn--outline btn--small"
+                  >Explore Greece</a
+                >
+              </div>
+            </article>
+
+            <article
+              class="destination-card"
+              data-region="oceania"
+              data-category="adventure nature"
+            >
+              <div class="destination-card__image-container">
+                <img
+                  src="assets/newzeeland.jpg"
+                  alt="Milford Sound in New Zealand with dramatic mountains and waterfalls"
+                  class="destination-card__image"
+                />
+                <div class="destination-card__overlay">
+                  <a href="#newzealand-modal" class="destination-card__cta"
+                    >View Details</a
+                  >
+                </div>
+              </div>
+              <div class="destination-card__content">
+                <div class="destination-card__badges">
+                  <span
+                    class="destination-card__badge destination-card__badge--adventure"
+                    >Adventure</span
+                  >
+                  <span
+                    class="destination-card__badge destination-card__badge--nature"
+                    >Nature</span
+                  >
+                </div>
+                <h3 class="destination-card__title">
+                  South Island, New Zealand
+                </h3>
+                <p class="destination-card__description">
+                  Dramatic landscapes, adventure sports, and Middle-earth
+                  filming locations.
+                </p>
+                <div class="destination-card__meta">
+                  <span class="destination-card__meta-item"
+                    >Best Time: Dec-Feb (Summer)</span
+                  >
+                  <span class="destination-card__meta-item"
+                    >From PKR32,999</span
+                  >
+                </div>
+                <a href="#newzealand-modal" class="btn btn--outline btn--small"
+                  >Explore New Zealand</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div id="istanbul-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">Istanbul, Turkey</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/istanbul.jpg"
+                  alt="Istanbul skyline with historic mosques and modern buildings"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  Istanbul, a city that straddles Europe and Asia across the
+                  Bosphorus Strait, is a mesmerizing blend of ancient and
+                  modern. Its Old City reflects the cultural influences of the
+                  many empires that once ruled here.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>Visit the iconic Hagia Sophia and Blue Mosque</li>
+                    <li>
+                      Explore the Grand Bazaar, one of the world's largest
+                      covered markets
+                    </li>
+                    <li>Cruise the Bosphorus for stunning city views</li>
+                    <li>Experience authentic Turkish cuisine and culture</li>
+                    <li>Discover the underground Basilica Cistern</li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> Spring (April-May) and
+                    Fall (September-October)
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 5-7 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR12,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About Istanbul</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="bali-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">Bali, Indonesia</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/bali.jpg"
+                  alt="Bali beach with turquoise water and palm trees"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  Bali is a tropical paradise known for its forested volcanic
+                  mountains, iconic rice paddies, beaches, and coral reefs. The
+                  island is home to religious sites such as cliffside Uluwatu
+                  Temple and thousands of Hindu temples.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>Relax on pristine beaches in Seminyak and Nusa Dua</li>
+                    <li>Explore ancient temples like Uluwatu and Tanah Lot</li>
+                    <li>Experience traditional Balinese dance and culture</li>
+                    <li>Visit the iconic Tegallalang Rice Terraces</li>
+                    <li>
+                      Enjoy world-class surfing, diving, and yoga retreats
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> April to October (dry
+                    season)
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 7-10 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR18,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About Bali</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="swiss-alps-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">Swiss Alps, Switzerland</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/switzerland.jpg"
+                  alt="Swiss Alps mountain range with snow-capped peaks"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  The Swiss Alps offer some of Europe's most breathtaking
+                  mountain scenery. From world-class ski resorts in winter to
+                  hiking and mountaineering in summer, the region provides
+                  year-round adventure amidst pristine natural beauty.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>
+                      Ski or snowboard in world-renowned resorts like Zermatt
+                      and St. Moritz
+                    </li>
+                    <li>Hike the spectacular trails of Jungfrau region</li>
+                    <li>Ride scenic trains like the Glacier Express</li>
+                    <li>
+                      Visit charming alpine villages and enjoy Swiss hospitality
+                    </li>
+                    <li>Experience summer paragliding and winter skiing</li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> December-March for
+                    skiing, June-September for hiking
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 7-10 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR24,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About Swiss Alps</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="japan-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">Kyoto & Tokyo, Japan</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/tokyo.jpg"
+                  alt="Traditional Japanese temple with cherry blossoms in Kyoto"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  Japan offers a perfect contrast between ancient traditions and
+                  cutting-edge modernity. Experience the serene temples and
+                  gardens of Kyoto alongside the neon-lit streets and
+                  technological wonders of Tokyo.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>
+                      Visit Kyoto's iconic Fushimi Inari Shrine and Kinkaku-ji
+                      Temple
+                    </li>
+                    <li>
+                      Experience the cherry blossom season (late March to early
+                      April)
+                    </li>
+                    <li>
+                      Explore Tokyo's vibrant neighborhoods like Shibuya and
+                      Shinjuku
+                    </li>
+                    <li>Ride the bullet train between cities</li>
+                    <li>Enjoy authentic sushi, ramen, and tea ceremonies</li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> Spring (cherry
+                    blossoms) and Fall (colorful foliage)
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 10-14 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR27,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About Japan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="greece-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">Santorini, Greece</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/santorini.jpg"
+                  alt="Santorini Greece with white buildings and blue domes overlooking the sea"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  Santorini is famous for its dramatic views, stunning sunsets,
+                  white-washed houses, and beautiful beaches. This volcanic
+                  island in the Cyclades group of the Greek islands is one of
+                  the most picturesque destinations in the world.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>Witness breathtaking sunsets in Oia</li>
+                    <li>Explore the unique black and red sand beaches</li>
+                    <li>Visit ancient archaeological sites like Akrotiri</li>
+                    <li>Enjoy sailing tours around the caldera</li>
+                    <li>Taste exquisite Greek cuisine and local wines</li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> May to October
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 5-7 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR21,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About Greece</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="newzealand-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">South Island, New Zealand</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/newzealand.jpg"
+                  alt="Milford Sound in New Zealand with dramatic mountains and waterfalls"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  New Zealand's South Island is an adventure lover's paradise
+                  with its snow-capped mountains, glaciers, fjords, and lush
+                  rainforests. It's also home to many filming locations from
+                  "The Lord of the Rings" trilogy.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>Cruise through spectacular Milford Sound</li>
+                    <li>Explore the adventure capital Queenstown</li>
+                    <li>Visit the Franz Josef and Fox Glaciers</li>
+                    <li>Experience Middle-earth at Hobbiton (North Island)</li>
+                    <li>Enjoy hiking, bungee jumping, skiing, and more</li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> December to February
+                    (summer)
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 10-14 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR32,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About New Zealand</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hunza-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">Hunza Valley, Pakistan</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/hunza.jpg"
+                  alt="Hunza Valley with mountains and river in Gilgit-Baltistan, Pakistan"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  Hunza Valley is a stunning mountain valley located in the
+                  Gilgit-Baltistan region of Pakistan. Known for its
+                  breathtaking landscapes, ancient Buddhist monasteries, and
+                  rich cultural heritage, Hunza offers a unique blend of natural
+                  beauty and traditional charm.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>Explore the ancient Buddhist monasteries of Hunza</li>
+                    <li>Experience the stunning Hunza Valley landscapes</li>
+                    <li>Visit the historic Baltit Fort and Baltit Palace</li>
+                    <li>Enjoy trekking through the Karakoram mountain range</li>
+                    <li>
+                      Discover the rich cultural heritage of the Hunza people
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> March to May and
+                    September to November
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 10-14 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR32,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About Hunza Valley</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="kaghan-modal" class="modal">
+        <div class="modal__overlay">
+          <div class="modal__container">
+            <div class="modal__header">
+              <h3 class="modal__title">Kaghan Valley, Pakistan</h3>
+              <a href="#" class="modal__close" aria-label="Close modal"
+                >&times;</a
+              >
+            </div>
+            <div class="modal__content">
+              <div class="modal__image">
+                <img
+                  src="assets/kaghan.jpg"
+                  alt="Kaghan Valley with mountains and river in Gilgit-Baltistan, Pakistan"
+                />
+              </div>
+              <div class="modal__details">
+                <p class="modal__description">
+                  Kaghan Valley is a stunning mountain valley located in the
+                  Gilgit-Baltistan region of Pakistan. Known for its
+                  breathtaking landscapes, ancient Buddhist monasteries, and
+                  rich cultural heritage, Kaghan offers a unique blend of
+                  natural beauty and traditional charm.
+                </p>
+                <div class="modal__highlights">
+                  <h4>Highlights:</h4>
+                  <ul>
+                    <li>Explore the ancient Buddhist monasteries of Kaghan</li>
+                    <li>Experience the stunning Kaghan Valley landscapes</li>
+                    <li>Visit the historic Saif-ul-Maluk lake</li>
+                    <li>Enjoy trekking through the Himalian mountain range</li>
+                    <li>
+                      Discover the rich cultural heritage of the Kaghan people
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal__info">
+                  <div class="modal__info-item">
+                    <strong>Best Time to Visit:</strong> March to May and
+                    September to November
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Ideal Duration:</strong> 10-14 days
+                  </div>
+                  <div class="modal__info-item">
+                    <strong>Starting Price:</strong> PKR32,999 per person
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__footer">
+              <a href="contact.html" class="btn btn--primary"
+                >Inquire About Kaghan Valley</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section section--cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta__content">
+              <h2 class="cta__title">Need Help Choosing?</h2>
+              <p class="cta__description">
+                Our travel experts can help you select the perfect destination
+                based on your interests, budget, and travel style.
+              </p>
+              <div class="cta__buttons">
+                <a href="contact.html" class="btn btn--primary btn--large"
+                  >Contact Our Experts</a
+                >
+                <a href="packages.html" class="btn btn--secondary btn--large"
+                  >View Travel Packages</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid--4-col">
+          <div class="footer__section">
+            <h3 class="footer__title">Dream Travels</h3>
+            <p class="footer__description">
+              Creating unforgettable travel experiences since 2010. Based in
+              Lahore, serving travelers worldwide.
+            </p>
+            <div class="footer__contact">
+              <p><i class="fa-solid fa-location-pin"></i> Lahore (Remote)</p>
+              <p><i class="fa-solid fa-message"></i> info@dreamtravels.com</p>
+              <p><i class="fa-solid fa-phone"></i> (123) 456-7890</p>
+            </div>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Legal</h3>
+            <ul class="footer__links">
+              <li><a href="./privacy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__section">
+            <h3 class="footer__title">Connect With Us</h3>
+            <ul class="footer__links">
+              <li>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li><a href="https://www.x.com" target="_blank">X</a></li>
+              <li>
+                <a href="https://www.youtube.com" target="_blank">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2025 Dream Travels. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
